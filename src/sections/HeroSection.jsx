@@ -31,19 +31,19 @@ export default function HeroSection() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-600 dark:bg-emerald-500"></span>
           </div>
           <span className="text-xs font-mono tracking-widest text-[var(--text-muted)] uppercase">
-            System.Status: Online
+            Open to Opportunities
           </span>
         </div>
 
         {/* ANAK 2: Small greeting/name (Tambahin 'gsap-child') */}
         <p className="gsap-child font-mono text-[var(--accent)] text-sm md:text-base tracking-widest mb-4 flex items-center gap-3">
           <span className="w-8 h-[1px] bg-[var(--accent)]"></span>
-          Fathan Mulyasa H.
+          Hello, I'm Fathan.
         </p>
 
         {/* ANAK 3: Huge Headline (Tambahin 'gsap-child') */}
         <h1 className="gsap-child font-display font-black text-4xl sm:text-6xl lg:text-8xl leading-[1.1] tracking-tight mb-6 text-[var(--text-primary)]">
-          Developer <span className="text-[var(--text-muted)] font-light">+</span> <br />
+          Full-Stack <span className="text-[var(--text-muted)] font-light">+</span> <br />
           <span
             style={{
               backgroundImage: 'linear-gradient(135deg, var(--accent) 0%, var(--text-primary) 100%)',
@@ -53,7 +53,7 @@ export default function HeroSection() {
               color: 'transparent',
             }}
           >
-            FullStack
+            Developer
           </span>
           {/* Lightweight Blinking Cursor pake Tailwind murni */}
           <span className="inline-block w-4 md:w-6 h-[0.8em] bg-[var(--accent)] ml-2 align-baseline animate-pulse" />
@@ -61,7 +61,7 @@ export default function HeroSection() {
 
         {/* ANAK 4: Subtitle (Tambahin 'gsap-child') */}
         <p className="gsap-child text-[var(--text-primary)]/70 max-w-xl text-lg md:text-xl leading-relaxed mb-10">
-          Building scalable solutions with a focus on clean code and user experience.
+          Fresh Graduate developer with internship and personal project experience, eager to learn, collaborate, and build meaningful software.
         </p>
 
         {/* ANAK 5: CTA Buttons (Tambahin 'gsap-child') */}

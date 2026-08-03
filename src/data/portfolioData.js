@@ -17,22 +17,22 @@ export const PROJECTS = [
     githubUrl: 'https://github.com/FathanEmHa/portfolio-tatan',
     liveUrl: 'https://portfolio.tansys.my.id',
   },
-  {
-    id: 'sports-booking-system',
-    title: 'Sports Venue Management System (SVMS)',
-    description:
-      '[STATUS: IN DEVELOPMENT] A modern SaaS platform for sports venue businesses to manage venues, court bookings, payments, customer operations, and business analytics through a scalable multi-tenant architecture.',
-    techStack: [
-      'Next.js',
-      'TypeScript',
-      'Node.js',
-      'PostgreSQL',
-      'Prisma',
-      'Docker',
-    ],
-    githubUrl: null,
-    liveUrl: null,
-  },
+  // {
+  //   id: 'sports-booking-system',
+  //   title: 'Sports Venue Management System (SVMS)',
+  //   description:
+  //     '[STATUS: IN DEVELOPMENT] A modern SaaS platform for sports venue businesses to manage venues, court bookings, payments, customer operations, and business analytics through a scalable multi-tenant architecture.',
+  //   techStack: [
+  //     'Next.js',
+  //     'TypeScript',
+  //     'Node.js',
+  //     'PostgreSQL',
+  //     'Prisma',
+  //     'Docker',
+  //   ],
+  //   githubUrl: null,
+  //   liveUrl: null,
+  // },
   {
     id: 'reimburse-system',
     title: 'Reimbursement System',
@@ -51,4 +51,22 @@ export const PROJECTS = [
   //   githubUrl: 'https://github.com/FathanEmHa/nodefarm-beta',
   //   liveUrl: 'http://nodefarm.tansys.my.id',
   // }
+  {
+    id: 'helpdesk-system',
+    title: 'Helpdesk Ticket Management System',
+    description:
+      '[STATUS: IN DEVELOPMENT] A modern helpdesk application built to streamline issue reporting and ticket management. Users can create and track support tickets, while administrators manage requests through role-based access, comments, pagination, filtering, and secure REST APIs.',
+    techStack: [
+      'React',
+      'ASP.NET Core Web API',
+      'C#',
+      'Entity Framework Core',
+      'PostgreSQL',
+      'JWT',
+      'Git',
+      'Scalar',
+    ],
+    githubUrl: "https://github.com/FathanEmHa/helpdesk-app",
+    liveUrl: null,
+  },
 ];

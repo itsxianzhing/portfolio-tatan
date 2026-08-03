@@ -21,28 +21,46 @@ const lines = [
   ],
   [
     { text: "  role: ", className: "text-emerald-700 dark:text-emerald-400" },
-    { text: '"Full-stack Developer"', className: "text-amber-600 dark:text-amber-300" },
+    { text: '"Fresh Graduate Full-Stack Developer"', className: "text-amber-600 dark:text-amber-300" },
     { text: ",", className: "text-[var(--text-primary)]" }
   ],
   [
-    { text: "  status: ", className: "text-emerald-700 dark:text-emerald-400" },
-    { text: '"Fresh Graduate (SMK RPL, May 2026)"', className: "text-amber-600 dark:text-amber-300" },
+    { text: "  education: ", className: "text-emerald-700 dark:text-emerald-400" },
+    { text: '"SMK RPL Graduate (2026)"', className: "text-amber-600 dark:text-amber-300" },
     { text: ",", className: "text-[var(--text-primary)]" }
   ],
   [
-    { text: "  focus: ", className: "text-emerald-700 dark:text-emerald-400" },
+    { text: "  experience: ", className: "text-emerald-700 dark:text-emerald-400" },
+    { text: '"Internship + Personal Projects"', className: "text-amber-600 dark:text-amber-300" },
+    { text: ",", className: "text-[var(--text-primary)]" }
+  ],
+  [
+    { text: "  techStack: ", className: "text-emerald-700 dark:text-emerald-400" },
     { text: "[", className: "text-yellow-600 dark:text-yellow-400" },
-    { text: '"Full-stack Development"', className: "text-amber-600 dark:text-amber-300" },
+    { text: '"ASP.NET Core"', className: "text-amber-600 dark:text-amber-300" },
     { text: ", ", className: "text-[var(--text-primary)]" },
-    { text: '"Digital Ecosystems"', className: "text-amber-600 dark:text-amber-300" },
+    { text: '"Laravel"', className: "text-amber-600 dark:text-amber-300" },
     { text: ", ", className: "text-[var(--text-primary)]" },
-    { text: '"Product Management"', className: "text-amber-600 dark:text-amber-300" },
+    { text: '"React"', className: "text-amber-600 dark:text-amber-300" },
+    { text: ", ", className: "text-[var(--text-primary)]" },
+    { text: '"PostgreSQL"', className: "text-amber-600 dark:text-amber-300" },
     { text: "]", className: "text-yellow-600 dark:text-yellow-400" },
     { text: ",", className: "text-[var(--text-primary)]" }
   ],
   [
-    { text: "  mission: ", className: "text-emerald-700 dark:text-emerald-400" },
-    { text: '"Architecting scalable solutions with clean code and a PM mindset."', className: "text-amber-600 dark:text-amber-300" }
+    { text: "  currentlyLearning: ", className: "text-emerald-700 dark:text-emerald-400" },
+    { text: "[", className: "text-yellow-600 dark:text-yellow-400" },
+    { text: '"Clean Architecture"', className: "text-amber-600 dark:text-amber-300" },
+    { text: ", ", className: "text-[var(--text-primary)]" },
+    { text: '"Software Design"', className: "text-amber-600 dark:text-amber-300" },
+    { text: ", ", className: "text-[var(--text-primary)]" },
+    { text: '"Docker"', className: "text-amber-600 dark:text-amber-300" },
+    { text: "]", className: "text-yellow-600 dark:text-yellow-400" },
+    { text: ",", className: "text-[var(--text-primary)]" }
+  ],
+  [
+    { text: "  goal: ", className: "text-emerald-700 dark:text-emerald-400" },
+    { text: '"Grow into a reliable Software Engineer through continuous learning."', className: "text-amber-600 dark:text-amber-300" }
   ],
   [
     { text: "};", className: "text-yellow-600 dark:text-yellow-400" }

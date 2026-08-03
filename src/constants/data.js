@@ -51,19 +51,25 @@ export const TECH_STACK = [
 
 export const TERMINAL_LINES = [
   { type: 'prompt', content: 'whoami' },
-  { type: 'output', content: 'fathan-mulyasa — Full-Stack Developer & Product Thinker' },
+  { type: 'output', content: 'fathan-mulyasa — Fresh Graduate Full-Stack Developer' },
+
   { type: 'blank', content: '' },
+
   { type: 'prompt', content: 'cat journey.txt' },
-  { type: 'output', content: 'Started coding with PHP and raw MySQL queries...' },
-  { type: 'output', content: 'Discovered Laravel — never looked back at spaghetti code.' },
-  { type: 'output', content: 'Fell in love with React\'s component model and Framer Motion.' },
-  { type: 'output', content: 'Now obsessed with clean architecture & developer experience.' },
+  { type: 'output', content: 'Started learning web development with PHP and MySQL.' },
+  { type: 'output', content: 'Built web applications through internship and personal projects.' },
+  { type: 'output', content: 'Currently learning ASP.NET Core while improving my React and Laravel skills.' },
+  { type: 'output', content: 'Always curious, always learning.' },
+
   { type: 'blank', content: '' },
-  { type: 'prompt', content: 'cat focus.txt' },
-  { type: 'output', content: '→ Product Management & Software Architecture' },
-  { type: 'output', content: '→ Building tools that developers & users actually enjoy' },
-  { type: 'output', content: '→ AI-assisted workflows for 10x productivity' },
+
+  { type: 'prompt', content: 'cat goals.txt' },
+  { type: 'output', content: '→ Grow as a Full-Stack Software Developer' },
+  { type: 'output', content: '→ Build reliable and user-friendly applications' },
+  { type: 'output', content: '→ Learn from experienced engineers and keep improving' },
+
   { type: 'blank', content: '' },
+
   { type: 'prompt', content: 'ls skills/' },
-  { type: 'output', content: 'React/  Laravel/  Livewire3/  Flutter/  TailwindCSS/  Framer/' },
+  { type: 'output', content: 'ASP.NET-Core/ Laravel/ React/ Next.js/ PostgreSQL/ Git/ Docker/' },
 ];

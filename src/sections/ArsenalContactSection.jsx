@@ -141,7 +141,7 @@ export default function ArsenalContactSection() {
                 <div className="flex flex-col gap-4 font-mono text-sm text-[var(--text-primary)]/80">
                   <div className="flex items-start gap-3 border-l-2 border-[var(--accent)] pl-3">
                     <span className="text-[var(--accent)] mt-0.5">&gt;&gt;</span>
-                    <p>Developing Sports Venue Management System (SVMS), a SaaS platform for sports facility operations and bookings.</p>
+                    <p>Developing a Helpdesk Ticket Management System using React and ASP.NET Core Web API to strengthen my full-stack development skills.</p>
                   </div>
 
                   <div className="flex items-start gap-3 border-l-2 border-[var(--accent)] pl-3">
@@ -151,7 +151,7 @@ export default function ArsenalContactSection() {
 
                   <div className="flex items-start gap-3 border-l-2 border-[var(--accent)] pl-3">
                     <span className="text-[var(--accent)] mt-0.5">&gt;&gt;</span>
-                    <p>Expanding from software engineering into product strategy, SaaS business, and startup execution.</p>
+                    <p>Building strong software engineering fundamentals while exploring product thinking and real-world problem solving.</p>
                   </div>
                 </div>
               </div>
@@ -181,7 +181,7 @@ export default function ArsenalContactSection() {
                   </p>
                   <div className="text-[var(--text-primary)] mb-10 space-y-4">
                     <p>Initiating secure channel...</p>
-                    <p>Looking for new opportunities or just want to talk about architecture and Product Management? My inbox is always open.</p>
+                    <p>I'm currently looking for Junior Full-Stack Developer opportunities. Whether you'd like to discuss web development, software engineering, or potential collaborations, I'd love to hear from you.</p>
                   </div>
                   
                   <a 
