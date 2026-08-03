@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ROW1_TECH = ["React", "Laravel", "TypeScript", "GSAP", "Framer Motion", "Tailwind CSS", "Flutter", "Livewire", "MongoDB", "Prisma"];
+const ROW1_TECH = ["React", "Laravel", "TypeScript", "GSAP", "Framer Motion", "Tailwind CSS", "Flutter", "Livewire", "MongoDB", "Prisma", "ASP.Net Core"];
 const ROW2_TECH = ["Claude", "Gemini", "OpenClaw", "Docker", "Cursor", "Antigravity", "Figma", "Postman", "Linux", "Next.js", "PostgreSQL"];
 
 const TechItem = ({ children }) => (
