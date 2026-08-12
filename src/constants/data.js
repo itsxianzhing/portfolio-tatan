@@ -7,9 +7,10 @@ export const SITE_META = {
   role: 'Full-Stack Developer',
   tagline: 'Building scalable solutions with a focus on clean code and user experience.',
   email: 'fathanmh26@gmail.com',   // ← replace with real email
-  github: 'https://github.com/FathanEmHa',
-  instagram: 'https://instagram.com/fathan_.mh',
+  github: 'https://github.com/itsxianzhing',
+  instagram: 'https://instagram.com/itsxianzhing',
   linkedin: 'https://www.linkedin.com/in/fathan-mulyasa-h-599470371/',
+  x: 'https://x.com/itsxianzhing'
 };
 
 // ---------------------------------------------------------
