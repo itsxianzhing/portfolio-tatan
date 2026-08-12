@@ -5,7 +5,7 @@ export const PROJECTS = [
     description:
       'A comprehensive digital asset management and borrowing system built for institutional use. Features role-based access control, automated penalty calculations, and dynamic inventory tracking.',
     techStack: ['Laravel', 'Livewire', 'Tailwind CSS', 'MySQL', 'JWT / OTP'],
-    githubUrl: 'https://github.com/FathanEmHa/peminjaman-beta',
+    githubUrl: 'https://github.com/itsxianzhing/peminjaman-beta',
     liveUrl: 'https://loan.tansys.my.id',
   },
   {
@@ -14,7 +14,7 @@ export const PROJECTS = [
     description:
       'A high-performance, cyberpunk-inspired personal portfolio. Engineered with advanced GSAP scroll-driven animations, parallax HUDs, and a custom HTML5 canvas particle engine achieving a 99+ Lighthouse performance score.',
     techStack: ['React', 'GSAP', 'Tailwind CSS', 'Framer Motion'],
-    githubUrl: 'https://github.com/FathanEmHa/portfolio-tatan',
+    githubUrl: 'https://github.com/itsxianzhing/portfolio-tatan',
     liveUrl: 'https://portfolio.tansys.my.id',
   },
   // {
@@ -48,7 +48,7 @@ export const PROJECTS = [
   //   description:
   //     '[STATUS: CONCEPT & WIREFRAME] An early-stage productivity platform currently focused on product research, wireframing, and feature validation. The project exists as a static prototype used to explore workflows, information architecture, and future AI-powered task management experiences before full-scale development begins.',
   //   techStack: ['Next.js', 'PostgreSQL', 'Tailwind CSS v4', 'Vercel AI SDK (Planned)'],
-  //   githubUrl: 'https://github.com/FathanEmHa/nodefarm-beta',
+  //   githubUrl: 'https://github.com/itsxianzhing/nodefarm-beta',
   //   liveUrl: 'http://nodefarm.tansys.my.id',
   // }
   {
@@ -66,7 +66,7 @@ export const PROJECTS = [
       'Git',
       'Scalar',
     ],
-    githubUrl: "https://github.com/FathanEmHa/helpdesk-app",
+    githubUrl: "https://github.com/itsxianzhing/helpdesk-app",
     liveUrl: null,
   },
 ];
