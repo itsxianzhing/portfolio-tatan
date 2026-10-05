@@ -55,18 +55,19 @@ export const PROJECTS = [
     id: 'helpdesk-system',
     title: 'Helpdesk Ticket Management System',
     description:
-      '[STATUS: IN DEVELOPMENT] A modern helpdesk application built to streamline issue reporting and ticket management. Users can create and track support tickets, while administrators manage requests through role-based access, comments, pagination, filtering, and secure REST APIs.',
+      '[STATUS: ACTIVE DEVELOPMENT] A modern helpdesk application for streamlined issue reporting and ticket management. Users can create and track support tickets, while administrators manage requests through role-based access, comments, activity logs, pagination, filtering, and secure REST APIs.',
     techStack: [
       'React',
       'ASP.NET Core Web API',
       'C#',
       'Entity Framework Core',
       'PostgreSQL',
+      'Supabase',
       'JWT',
       'Git',
       'Scalar',
     ],
-    githubUrl: "https://github.com/itsxianzhing/helpdesk-app",
-    liveUrl: null,
+    githubUrl: 'https://github.com/itsxianzhing/helpdesk-app',
+    liveUrl: 'https://helpdesk.tansys.my.id',
   },
 ];

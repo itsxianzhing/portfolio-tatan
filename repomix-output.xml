@@ -1,0 +1,3451 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.github/
+  workflows/
+    deploy.yml
+public/
+  favicon.svg
+  icons.svg
+src/
+  assets/
+    hero.png
+    react.svg
+    vite.svg
+  components/
+    hero/
+      SpaceParticles.jsx
+    layout/
+      GlobalScrollMouse.jsx
+      KatakanaWatermark.jsx
+      Sidebar.jsx
+      ThemeToggle.jsx
+    AnimatedSection.jsx
+    TechMarquee.jsx
+  constants/
+    data.js
+  data/
+    portfolioData.js
+  hooks/
+    useActiveSection.js
+  sections/
+    AboutSection.jsx
+    ArsenalContactSection.jsx
+    HeroSection.jsx
+    ProjectsSection.jsx
+  App.css
+  App.jsx
+  index.css
+  main.jsx
+.dockerignore
+.gitignore
+docker-compose.yml
+Dockerfile
+eslint.config.js
+index.html
+nginx.conf
+package.json
+postcss.config.js
+README.md
+tailwind.config.js
+vite.config.js
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="public/favicon.svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="46" fill="none" viewBox="0 0 48 46"><path fill="#863bff" d="M25.946 44.938c-.664.845-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.287c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.497 0-3.578-1.842-3.578H1.237c-.92 0-1.456-1.04-.92-1.788L10.013.474c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.579 1.842 3.579h11.377c.943 0 1.473 1.088.89 1.83L25.947 44.94z" style="fill:#863bff;fill:color(display-p3 .5252 .23 1);fill-opacity:1"/><mask id="a" width="48" height="46" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#000" d="M25.842 44.938c-.664.844-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.183c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.498 0-3.579-1.842-3.579H1.133c-.92 0-1.456-1.04-.92-1.787L9.91.473c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.578 1.842 3.578h11.377c.943 0 1.473 1.088.89 1.832L25.843 44.94z" style="fill:#000;fill-opacity:1"/></mask><g mask="url(#a)"><g filter="url(#b)"><ellipse cx="5.508" cy="14.704" fill="#ede6ff" rx="5.508" ry="14.704" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -4.47 31.516)"/></g><g filter="url(#c)"><ellipse cx="10.399" cy="29.851" fill="#ede6ff" rx="10.399" ry="29.851" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -39.328 7.883)"/></g><g filter="url(#d)"><ellipse cx="5.508" cy="30.487" fill="#7e14ff" rx="5.508" ry="30.487" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.814 -25.913 -14.639)scale(1 -1)"/></g><g filter="url(#e)"><ellipse cx="5.508" cy="30.599" fill="#7e14ff" rx="5.508" ry="30.599" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.814 -32.644 -3.334)scale(1 -1)"/></g><g filter="url(#f)"><ellipse cx="5.508" cy="30.599" fill="#7e14ff" rx="5.508" ry="30.599" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -34.34 30.47)"/></g><g filter="url(#g)"><ellipse cx="14.072" cy="22.078" fill="#ede6ff" rx="14.072" ry="22.078" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="rotate(93.35 24.506 48.493)scale(-1 1)"/></g><g filter="url(#h)"><ellipse cx="3.47" cy="21.501" fill="#7e14ff" rx="3.47" ry="21.501" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.009 28.708 47.59)scale(-1 1)"/></g><g filter="url(#i)"><ellipse cx="3.47" cy="21.501" fill="#7e14ff" rx="3.47" ry="21.501" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.009 28.708 47.59)scale(-1 1)"/></g><g filter="url(#j)"><ellipse cx=".387" cy="8.972" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(39.51 .387 8.972)"/></g><g filter="url(#k)"><ellipse cx="47.523" cy="-6.092" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 47.523 -6.092)"/></g><g filter="url(#l)"><ellipse cx="41.412" cy="6.333" fill="#47bfff" rx="5.971" ry="9.665" style="fill:#47bfff;fill:color(display-p3 .2799 .748 1);fill-opacity:1" transform="rotate(37.892 41.412 6.333)"/></g><g filter="url(#m)"><ellipse cx="-1.879" cy="38.332" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 -1.88 38.332)"/></g><g filter="url(#n)"><ellipse cx="-1.879" cy="38.332" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 -1.88 38.332)"/></g><g filter="url(#o)"><ellipse cx="35.651" cy="29.907" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 35.651 29.907)"/></g><g filter="url(#p)"><ellipse cx="38.418" cy="32.4" fill="#47bfff" rx="5.971" ry="15.297" style="fill:#47bfff;fill:color(display-p3 .2799 .748 1);fill-opacity:1" transform="rotate(37.892 38.418 32.4)"/></g></g><defs><filter id="b" width="60.045" height="41.654" x="-19.77" y="16.149" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="c" width="90.34" height="51.437" x="-54.613" y="-7.533" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="d" width="79.355" height="29.4" x="-49.64" y="2.03" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="e" width="79.579" height="29.4" x="-45.045" y="20.029" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="f" width="79.579" height="29.4" x="-43.513" y="21.178" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="g" width="74.749" height="58.852" x="15.756" y="-17.901" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="h" width="61.377" height="25.362" x="23.548" y="2.284" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="i" width="61.377" height="25.362" x="23.548" y="2.284" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="j" width="56.045" height="63.649" x="-27.636" y="-22.853" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="k" width="54.814" height="64.646" x="20.116" y="-38.415" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="l" width="33.541" height="35.313" x="24.641" y="-11.323" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="m" width="54.814" height="64.646" x="-29.286" y="6.009" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="n" width="54.814" height="64.646" x="-29.286" y="6.009" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="o" width="54.814" height="64.646" x="8.244" y="-2.416" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="p" width="39.409" height="43.623" x="18.713" y="10.588" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter></defs></svg>
+</file>
+
+<file path="public/icons.svg">
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="bluesky-icon" viewBox="0 0 16 17">
+    <g clip-path="url(#bluesky-clip)"><path fill="#08060d" d="M7.75 7.735c-.693-1.348-2.58-3.86-4.334-5.097-1.68-1.187-2.32-.981-2.74-.79C.188 2.065.1 2.812.1 3.251s.241 3.602.398 4.13c.52 1.744 2.367 2.333 4.07 2.145-2.495.37-4.71 1.278-1.805 4.512 3.196 3.309 4.38-.71 4.987-2.746.608 2.036 1.307 5.91 4.93 2.746 2.72-2.746.747-4.143-1.747-4.512 1.702.189 3.55-.4 4.07-2.145.156-.528.397-3.691.397-4.13s-.088-1.186-.575-1.406c-.42-.19-1.06-.395-2.741.79-1.755 1.24-3.64 3.752-4.334 5.099"/></g>
+    <defs><clipPath id="bluesky-clip"><path fill="#fff" d="M.1.85h15.3v15.3H.1z"/></clipPath></defs>
+  </symbol>
+  <symbol id="discord-icon" viewBox="0 0 20 19">
+    <path fill="#08060d" d="M16.224 3.768a14.5 14.5 0 0 0-3.67-1.153c-.158.286-.343.67-.47.976a13.5 13.5 0 0 0-4.067 0c-.128-.306-.317-.69-.476-.976A14.4 14.4 0 0 0 3.868 3.77C1.546 7.28.916 10.703 1.231 14.077a14.7 14.7 0 0 0 4.5 2.306q.545-.748.965-1.587a9.5 9.5 0 0 1-1.518-.74q.191-.14.372-.293c2.927 1.369 6.107 1.369 8.999 0q.183.152.372.294-.723.437-1.52.74.418.838.963 1.588a14.6 14.6 0 0 0 4.504-2.308c.37-3.911-.63-7.302-2.644-10.309m-9.13 8.234c-.878 0-1.599-.82-1.599-1.82 0-.998.705-1.82 1.6-1.82.894 0 1.614.82 1.599 1.82.001 1-.705 1.82-1.6 1.82m5.91 0c-.878 0-1.599-.82-1.599-1.82 0-.998.705-1.82 1.6-1.82.893 0 1.614.82 1.599 1.82 0 1-.706 1.82-1.6 1.82"/>
+  </symbol>
+  <symbol id="documentation-icon" viewBox="0 0 21 20">
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="m15.5 13.333 1.533 1.322c.645.555.967.833.967 1.178s-.322.623-.967 1.179L15.5 18.333m-3.333-5-1.534 1.322c-.644.555-.966.833-.966 1.178s.322.623.966 1.179l1.534 1.321"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M17.167 10.836v-4.32c0-1.41 0-2.117-.224-2.68-.359-.906-1.118-1.621-2.08-1.96-.599-.21-1.349-.21-2.848-.21-2.623 0-3.935 0-4.983.369-1.684.591-3.013 1.842-3.641 3.428C3 6.449 3 7.684 3 10.154v2.122c0 2.558 0 3.838.706 4.726q.306.383.713.671c.76.536 1.79.64 3.581.66"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M3 10a2.78 2.78 0 0 1 2.778-2.778c.555 0 1.209.097 1.748-.047.48-.129.854-.503.982-.982.145-.54.048-1.194.048-1.749a2.78 2.78 0 0 1 2.777-2.777"/>
+  </symbol>
+  <symbol id="github-icon" viewBox="0 0 19 19">
+    <path fill="#08060d" fill-rule="evenodd" d="M9.356 1.85C5.05 1.85 1.57 5.356 1.57 9.694a7.84 7.84 0 0 0 5.324 7.44c.387.079.528-.168.528-.376 0-.182-.013-.805-.013-1.454-2.165.467-2.616-.935-2.616-.935-.349-.91-.864-1.143-.864-1.143-.71-.48.051-.48.051-.48.787.051 1.2.805 1.2.805.695 1.194 1.817.857 2.268.649.064-.507.27-.857.49-1.052-1.728-.182-3.545-.857-3.545-3.87 0-.857.31-1.558.8-2.104-.078-.195-.349-1 .077-2.078 0 0 .657-.208 2.14.805a7.5 7.5 0 0 1 1.946-.26c.657 0 1.328.092 1.946.26 1.483-1.013 2.14-.805 2.14-.805.426 1.078.155 1.883.078 2.078.502.546.799 1.247.799 2.104 0 3.013-1.818 3.675-3.558 3.87.284.247.528.714.528 1.454 0 1.052-.012 1.896-.012 2.156 0 .208.142.455.528.377a7.84 7.84 0 0 0 5.324-7.441c.013-4.338-3.48-7.844-7.773-7.844" clip-rule="evenodd"/>
+  </symbol>
+  <symbol id="social-icon" viewBox="0 0 20 20">
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M12.5 6.667a4.167 4.167 0 1 0-8.334 0 4.167 4.167 0 0 0 8.334 0"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M2.5 16.667a5.833 5.833 0 0 1 8.75-5.053m3.837.474.513 1.035c.07.144.257.282.414.309l.93.155c.596.1.736.536.307.965l-.723.73a.64.64 0 0 0-.152.531l.207.903c.164.715-.213.991-.84.618l-.872-.52a.63.63 0 0 0-.577 0l-.872.52c-.624.373-1.003.094-.84-.618l.207-.903a.64.64 0 0 0-.152-.532l-.723-.729c-.426-.43-.289-.864.306-.964l.93-.156a.64.64 0 0 0 .412-.31l.513-1.034c.28-.562.735-.562 1.012 0"/>
+  </symbol>
+  <symbol id="x-icon" viewBox="0 0 19 19">
+    <path fill="#08060d" fill-rule="evenodd" d="M1.893 1.98c.052.072 1.245 1.769 2.653 3.77l2.892 4.114c.183.261.333.48.333.486s-.068.089-.152.183l-.522.593-.765.867-3.597 4.087c-.375.426-.734.834-.798.905a1 1 0 0 0-.118.148c0 .01.236.017.664.017h.663l.729-.83c.4-.457.796-.906.879-.999a692 692 0 0 0 1.794-2.038c.034-.037.301-.34.594-.675l.551-.624.345-.392a7 7 0 0 1 .34-.374c.006 0 .93 1.306 2.052 2.903l2.084 2.965.045.063h2.275c1.87 0 2.273-.003 2.266-.021-.008-.02-1.098-1.572-3.894-5.547-2.013-2.862-2.28-3.246-2.273-3.266.008-.019.282-.332 2.085-2.38l2-2.274 1.567-1.782c.022-.028-.016-.03-.65-.03h-.674l-.3.342a871 871 0 0 1-1.782 2.025c-.067.075-.405.458-.75.852a100 100 0 0 1-.803.91c-.148.172-.299.344-.99 1.127-.304.343-.32.358-.345.327-.015-.019-.904-1.282-1.976-2.808L6.365 1.85H1.8zm1.782.91 8.078 11.294c.772 1.08 1.413 1.973 1.425 1.984.016.017.241.02 1.05.017l1.03-.004-2.694-3.766L7.796 5.75 5.722 2.852l-1.039-.004-1.039-.004z" clip-rule="evenodd"/>
+  </symbol>
+</svg>
+</file>
+
+<file path="src/assets/react.svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="35.93" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 228"><path fill="#00D8FF" d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621c6.238-30.281 2.16-54.676-11.769-62.708c-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848a155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233C50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165a167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266c13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923a168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586c13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488c29.348-9.723 48.443-25.443 48.443-41.52c0-15.417-17.868-30.326-45.517-39.844Zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345c-3.24-10.257-7.612-21.163-12.963-32.432c5.106-11 9.31-21.767 12.459-31.957c2.619.758 5.16 1.557 7.61 2.4c23.69 8.156 38.14 20.213 38.14 29.504c0 9.896-15.606 22.743-40.946 31.14Zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787c-1.524 8.219-4.59 13.698-8.382 15.893c-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246c12.376-1.098 24.068-2.894 34.671-5.345a134.17 134.17 0 0 1 1.386 6.193ZM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675c-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994c7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94ZM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863c-6.35-5.437-9.555-10.836-9.555-15.216c0-9.322 13.897-21.212 37.076-29.293c2.813-.98 5.757-1.905 8.812-2.773c3.204 10.42 7.406 21.315 12.477 32.332c-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979Zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789c8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988c-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887Zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08c-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322Zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18ZM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152c7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897Zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793c2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147Zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433c4.902.192 9.899.29 14.978.29c5.218 0 10.376-.117 15.453-.343c-4.985 6.774-10.018 12.97-15.028 18.486Zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52c-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026a347.403 347.403 0 0 0 7.425-13.565Zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815a329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627a310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695a358.489 358.489 0 0 1 11.036 20.54a329.472 329.472 0 0 1-11 20.722Zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026c-.344 1.668-.73 3.367-1.15 5.09c-10.622-2.452-22.155-4.275-34.23-5.408c-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3ZM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86s-22.86-10.235-22.86-22.86s10.235-22.86 22.86-22.86Z"></path></svg>
+</file>
+
+<file path="src/assets/vite.svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="77" height="47" fill="none" aria-labelledby="vite-logo-title" viewBox="0 0 77 47"><title id="vite-logo-title">Vite</title><style>.parenthesis{fill:#000}@media (prefers-color-scheme:dark){.parenthesis{fill:#fff}}</style><path fill="#9135ff" d="M40.151 45.71c-.663.844-2.02.374-2.02-.699V34.708a2.26 2.26 0 0 0-2.262-2.262H24.493c-.92 0-1.457-1.04-.92-1.788l7.479-10.471c1.07-1.498 0-3.578-1.842-3.578H15.443c-.92 0-1.456-1.04-.92-1.788l9.696-13.576c.213-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.472c-1.07 1.497 0 3.578 1.842 3.578h11.376c.944 0 1.474 1.087.89 1.83L40.153 45.712z"/><mask id="a" width="48" height="47" x="14" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#000" d="M40.047 45.71c-.663.843-2.02.374-2.02-.699V34.708a2.26 2.26 0 0 0-2.262-2.262H24.389c-.92 0-1.457-1.04-.92-1.788l7.479-10.472c1.07-1.497 0-3.578-1.842-3.578H15.34c-.92 0-1.456-1.04-.92-1.788l9.696-13.575c.213-.297.556-.474.92-.474H53.93c.92 0 1.456 1.04.92 1.788L47.37 13.03c-1.07 1.498 0 3.578 1.842 3.578h11.376c.944 0 1.474 1.088.89 1.831L40.049 45.712z"/></mask><g mask="url(#a)"><g filter="url(#b)"><ellipse cx="5.508" cy="14.704" fill="#eee6ff" rx="5.508" ry="14.704" transform="rotate(269.814 20.96 11.29)scale(-1 1)"/></g><g filter="url(#c)"><ellipse cx="10.399" cy="29.851" fill="#eee6ff" rx="10.399" ry="29.851" transform="rotate(89.814 -16.902 -8.275)scale(1 -1)"/></g><g filter="url(#d)"><ellipse cx="5.508" cy="30.487" fill="#8900ff" rx="5.508" ry="30.487" transform="rotate(89.814 -19.197 -7.127)scale(1 -1)"/></g><g filter="url(#e)"><ellipse cx="5.508" cy="30.599" fill="#8900ff" rx="5.508" ry="30.599" transform="rotate(89.814 -25.928 4.177)scale(1 -1)"/></g><g filter="url(#f)"><ellipse cx="5.508" cy="30.599" fill="#8900ff" rx="5.508" ry="30.599" transform="rotate(89.814 -25.738 5.52)scale(1 -1)"/></g><g filter="url(#g)"><ellipse cx="14.072" cy="22.078" fill="#eee6ff" rx="14.072" ry="22.078" transform="rotate(93.35 31.245 55.578)scale(-1 1)"/></g><g filter="url(#h)"><ellipse cx="3.47" cy="21.501" fill="#8900ff" rx="3.47" ry="21.501" transform="rotate(89.009 35.419 55.202)scale(-1 1)"/></g><g filter="url(#i)"><ellipse cx="3.47" cy="21.501" fill="#8900ff" rx="3.47" ry="21.501" transform="rotate(89.009 35.419 55.202)scale(-1 1)"/></g><g filter="url(#j)"><ellipse cx="14.592" cy="9.743" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(39.51 14.592 9.743)"/></g><g filter="url(#k)"><ellipse cx="61.728" cy="-5.321" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 61.728 -5.32)"/></g><g filter="url(#l)"><ellipse cx="55.618" cy="7.104" fill="#00c2ff" rx="5.971" ry="9.665" transform="rotate(37.892 55.618 7.104)"/></g><g filter="url(#m)"><ellipse cx="12.326" cy="39.103" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 12.326 39.103)"/></g><g filter="url(#n)"><ellipse cx="12.326" cy="39.103" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 12.326 39.103)"/></g><g filter="url(#o)"><ellipse cx="49.857" cy="30.678" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 49.857 30.678)"/></g><g filter="url(#p)"><ellipse cx="52.623" cy="33.171" fill="#00c2ff" rx="5.971" ry="15.297" transform="rotate(37.892 52.623 33.17)"/></g></g><path d="M6.919 0c-9.198 13.166-9.252 33.575 0 46.789h6.215c-9.25-13.214-9.196-33.623 0-46.789zm62.424 0h-6.215c9.198 13.166 9.252 33.575 0 46.789h6.215c9.25-13.214 9.196-33.623 0-46.789" class="parenthesis"/><defs><filter id="b" width="60.045" height="41.654" x="-5.564" y="16.92" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="7.659"/></filter><filter id="c" width="90.34" height="51.437" x="-40.407" y="-6.762" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="7.659"/></filter><filter id="d" width="79.355" height="29.4" x="-35.435" y="2.801" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="e" width="79.579" height="29.4" x="-30.84" y="20.8" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="f" width="79.579" height="29.4" x="-29.307" y="21.949" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="g" width="74.749" height="58.852" x="29.961" y="-17.13" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="7.659"/></filter><filter id="h" width="61.377" height="25.362" x="37.754" y="3.055" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="i" width="61.377" height="25.362" x="37.754" y="3.055" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="j" width="56.045" height="63.649" x="-13.43" y="-22.082" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="k" width="54.814" height="64.646" x="34.321" y="-37.644" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="l" width="33.541" height="35.313" x="38.847" y="-10.552" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="m" width="54.814" height="64.646" x="-15.081" y="6.78" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="n" width="54.814" height="64.646" x="-15.081" y="6.78" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="o" width="54.814" height="64.646" x="22.45" y="-1.645" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="p" width="39.409" height="43.623" x="32.919" y="11.36" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter></defs></svg>
+</file>
+
+<file path="src/components/hero/SpaceParticles.jsx">
+import React, { useEffect, useRef } from 'react';
+
+export default function SpaceParticles() {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+
+    const handleResize = () => {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+    };
+    window.addEventListener('resize', handleResize);
+
+    const shapes = ['dot', 'dot', 'dot', 'cross', 'ring', 'dot'];
+    const particles = Array.from({ length: 150 }).map((_, i) => {
+      const depth = Math.random();
+      return {
+        id: i,
+        shape: shapes[Math.floor(Math.random() * shapes.length)],
+        size: depth * 3 + 1.5, 
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        depth: depth,
+        baseOpacity: depth * 0.8,
+        pulseSpeed: Math.random() * 0.002 + 0.001,
+        pulseOffset: Math.random() * Math.PI * 2,
+        isAccent: depth > 0.85
+      };
+    });
+
+    let scrollY = window.scrollY;
+    const handleScroll = () => {
+      scrollY = window.scrollY;
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    let mouseX = 0;
+    let mouseY = 0;
+    let targetMouseX = 0;
+    let targetMouseY = 0;
+
+    const handleMouseMove = (e) => {
+      targetMouseX = (e.clientX / width - 0.5) * 100;
+      targetMouseY = (e.clientY / height - 0.5) * 100;
+    };
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
+
+    let animationFrameId;
+    let startTime = performance.now();
+
+    const render = (time) => {
+      const elapsed = time - startTime;
+      ctx.clearRect(0, 0, width, height);
+
+      // Spring physics for mouse tracking
+      mouseX += (targetMouseX - mouseX) * 0.05;
+      mouseY += (targetMouseY - mouseY) * 0.05;
+
+      // Rotation logic: time-based + scroll-based scrub effect
+      const rotationDeg = (elapsed / 150) + (scrollY * 0.15);
+      const rotationRad = (rotationDeg * Math.PI) / 180;
+
+      // Container scale based on scroll
+      const maxScroll = document.body.scrollHeight - window.innerHeight;
+      const scrollProgress = maxScroll > 0 ? Math.min(Math.max(scrollY / maxScroll, 0), 1) : 0;
+      const scale = 1 + (scrollProgress * 0.8);
+
+      ctx.save();
+      
+      // Center the context to apply transformations
+      ctx.translate(width / 2, height / 2);
+      
+      // Apply mouse parallax
+      ctx.translate(-mouseX * (width * 0.002), -mouseY * (height * 0.002));
+      
+      // Apply scale
+      ctx.scale(scale, scale);
+      
+      // Apply rotation
+      ctx.rotate(rotationRad);
+      
+      // Translate back to top-left of the virtual 150vw x 150vh container
+      const containerW = width * 1.5;
+      const containerH = height * 1.5;
+      ctx.translate(-containerW / 2, -containerH / 2);
+
+      // Resolve CSS colors for this frame (allows dynamic theme switching)
+      const computedStyles = getComputedStyle(canvas);
+      const accentColor = computedStyles.getPropertyValue('--accent').trim() || '#00E5FF';
+      const textPrimaryColor = computedStyles.getPropertyValue('--text-primary').trim() || '#E5E7EB';
+      const textMutedColor = computedStyles.getPropertyValue('--text-muted').trim() || '#6B7280';
+
+      // --- PLANET 1: Saturnus Abstrak (Kanan Atas) ---
+      ctx.save();
+      ctx.globalAlpha = 0.2;
+      ctx.translate(containerW * 0.75, containerH * 0.2);
+      
+      const grad = ctx.createLinearGradient(-40, -40, 40, 40);
+      grad.addColorStop(0, accentColor);
+      grad.addColorStop(1, 'transparent');
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(0, 0, 40, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.rotate(-30 * Math.PI / 180);
+      ctx.strokeStyle = textPrimaryColor;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.ellipse(0, 0, 90, 20, 0, 0, Math.PI * 2);
+      ctx.stroke();
+
+      ctx.strokeStyle = accentColor;
+      ctx.setLineDash([5, 5]);
+      ctx.globalAlpha = 0.1;
+      ctx.beginPath();
+      ctx.ellipse(0, 0, 110, 30, 0, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.restore();
+
+      // --- PLANET 2: Gas Giant (Kiri Bawah) ---
+      ctx.save();
+      ctx.globalAlpha = 0.15;
+      ctx.translate(containerW * 0.2, containerH * 0.75);
+      
+      ctx.strokeStyle = accentColor;
+      ctx.lineWidth = 2;
+      ctx.shadowColor = accentColor;
+      ctx.shadowBlur = 40;
+      ctx.beginPath();
+      ctx.arc(0, 0, 70, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+
+      ctx.strokeStyle = textPrimaryColor;
+      ctx.beginPath();
+      ctx.arc(0, 0, 125, -Math.PI/4, Math.PI * 3/4);
+      ctx.stroke();
+      ctx.restore();
+
+      // --- PARTICLES ---
+      particles.forEach(p => {
+        const px = (p.x / 100) * containerW;
+        const py = (p.y / 100) * containerH;
+
+        const currentOpacity = (Math.sin((elapsed * p.pulseSpeed) + p.pulseOffset) * 0.5 + 0.5) * (p.baseOpacity - p.depth * 0.2) + p.depth * 0.2;
+        ctx.globalAlpha = currentOpacity;
+
+        const isDot = p.shape === 'dot';
+        const isCross = p.shape === 'cross';
+        const isRing = p.shape === 'ring';
+
+        ctx.save();
+        ctx.translate(px, py);
+
+        if (isDot) {
+          ctx.fillStyle = p.isAccent ? accentColor : textPrimaryColor;
+          if (p.isAccent) {
+            ctx.shadowColor = accentColor;
+            ctx.shadowBlur = 12;
+          }
+          ctx.beginPath();
+          ctx.arc(0, 0, p.size / 2, 0, Math.PI * 2);
+          ctx.fill();
+        } else if (isRing) {
+          ctx.strokeStyle = p.isAccent ? accentColor : textMutedColor;
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.arc(0, 0, (p.size * 3) / 2, 0, Math.PI * 2);
+          ctx.stroke();
+        } else if (isCross) {
+          ctx.fillStyle = p.isAccent ? accentColor : textMutedColor;
+          ctx.font = `${p.size * 4}px monospace`;
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText('+', 0, 0);
+        }
+
+        ctx.restore();
+      });
+
+      ctx.restore();
+      animationFrameId = requestAnimationFrame(render);
+    };
+
+    animationFrameId = requestAnimationFrame(render);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('mousemove', handleMouseMove);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
+
+  return (
+    <div className="fixed inset-0 overflow-hidden pointer-events-none" style={{ zIndex: -1 }}>
+      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+      {/* Radial overlay to blend the edges into the background color smoothly */}
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(circle at center, transparent 0%, var(--bg-primary) 120%)' }} />
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/layout/GlobalScrollMouse.jsx">
+import { m as motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
+
+export default function GlobalScrollMouse() {
+  const [isVisible, setIsVisible] = useState(true)
+
+  const handleScrollToNext = () => {
+    // Get all sections inside the main container
+    const sections = Array.from(document.querySelectorAll('main > section'))
+    if (sections.length === 0) return
+
+    // Find the next section that is below the current scroll position
+    // Adding a 50px buffer to ensure we don't snap to the current one if slightly scrolled
+    const nextSection = sections.find(section => {
+      const rect = section.getBoundingClientRect()
+      return rect.top > 50
+    })
+
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      // If no next section, we are at the bottom, so scroll back up
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
+  // Hide the mouse if we are at the very bottom of the page
+  useEffect(() => {
+    const handleScroll = () => {
+      const isBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 50
+      setIsVisible(!isBottom)
+    }
+    
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    // Check initial state
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: isVisible ? 1 : 0 }}
+      transition={{ duration: 0.5 }}
+      className={`fixed bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer z-50 ${!isVisible ? 'pointer-events-none' : ''}`}
+      onClick={isVisible ? handleScrollToNext : undefined}
+    >
+      <div className="w-[26px] h-[40px] rounded-full border-2 border-text-muted flex justify-center p-1 bg-[var(--bg-primary)]/50 backdrop-blur-sm shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+        <motion.div
+          animate={{
+            y: [0, 12, 0],
+            opacity: [1, 0, 1]
+          }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="w-1.5 h-1.5 rounded-full bg-accent shadow-[0_0_8px_var(--accent)]"
+        />
+      </div>
+    </motion.div>
+  )
+}
+</file>
+
+<file path="src/components/layout/KatakanaWatermark.jsx">
+import { m as motion, useMotionValue, useMotionTemplate  } from 'framer-motion'
+import { useState } from 'react'
+
+/**
+ * Katakana watermark — positioned ABSOLUTELY inside the Hero section only.
+ * Features: True vertical text stacking & Mouse-tracking spotlight hover effect.
+ */
+export default function KatakanaWatermark() {
+  // Tracking posisi mouse buat efek spotlight (lampu senter)
+  const mouseX = useMotionValue(0)
+  const mouseY = useMotionValue(0)
+  const [isHovered, setIsHovered] = useState(false)
+
+  // Fungsi untuk update posisi spotlight pas mouse gerak
+  function handleMouseMove({ currentTarget, clientX, clientY }) {
+    const { left, top } = currentTarget.getBoundingClientRect()
+    mouseX.set(clientX - left)
+    mouseY.set(clientY - top)
+  }
+
+  return (
+    <motion.div
+      aria-hidden="true"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1.0, duration: 1.5, ease: 'easeOut' }}
+      onMouseMove={handleMouseMove}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      style={{
+        position: 'absolute',
+        right: '5%',
+        top: '53%',
+        transform: 'translateY(-50%)',
+        zIndex: 0,
+
+        // --- Setting Teks Vertikal yang Benar ---
+        writingMode: 'vertical-rl',
+        textOrientation: 'upright',
+        whiteSpace: 'nowrap', // FIX 1: Biar nggak pindah baris
+        height: 'max-content', // FIX 2: Pastiin tinggi container ngikutin teks
+        // ----------------------------------------
+
+        fontFamily: "'Inter', sans-serif",
+        fontSize: 'clamp(40px, 8vw, 110px)',
+        fontWeight: 900,
+        letterSpacing: '0.15em',
+        userSelect: 'none',
+        pointerEvents: 'auto',
+        cursor: 'default',
+      }}
+      className="relative inline-block"
+    >
+      {/* LAYER 1: Teks Dasar (Redup) */}
+      <div style={{ color: 'var(--text-primary)'}}>
+        ファタン
+      </div>
+
+      {/* LAYER 2: Teks Glow/Spotlight (Warna Accent) yang ngikutin mouse */}
+      <motion.div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          color: 'var(--accent)',
+          opacity: isHovered ? 1 : 0,
+          textShadow: '0 0 25px var(--accent)',
+          transition: 'opacity 0.3s ease',
+
+          // --- Magic-nya di sini: Masking ngikutin mouse ---
+          WebkitMaskImage: useMotionTemplate`radial-gradient(130px circle at ${mouseX}px ${mouseY}px, white 0%, transparent 100%)`,
+          maskImage: useMotionTemplate`radial-gradient(130px circle at ${mouseX}px ${mouseY}px, white 0%, transparent 100%)`,
+        }}
+      >
+        ファタン
+      </motion.div>
+    </motion.div>
+  )
+}
+</file>
+
+<file path="src/components/layout/ThemeToggle.jsx">
+import { m as motion, AnimatePresence  } from 'framer-motion'
+import { Moon, Sun } from 'lucide-react'
+
+export default function ThemeToggle({ isDark, onToggle }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0  }}
+      transition={{ delay: 0.4, duration: 0.5, ease: 'easeOut' }}
+      style={{ position: 'fixed', top: '24px', right: '28px', zIndex: 100 }}
+    >
+      <motion.button
+        id="theme-toggle"
+        onClick={onToggle}
+        whileHover={{ scale: 1.08 }}
+        whileTap={{ scale: 0.92 }}
+        aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+        style={{
+          display:         'flex',
+          alignItems:      'center',
+          gap:             '6px',
+          padding:         '8px 14px',
+          borderRadius:    '999px',
+          border:          '1px solid var(--border-accent)',
+          background:      'var(--bg-card)',
+          color:           'var(--accent)',
+          cursor:          'pointer',
+          backdropFilter:  'blur(12px)',
+          WebkitBackdropFilter: 'blur(12px)',
+          fontSize:        '0.7rem',
+          fontFamily:      "'JetBrains Mono', monospace",
+          fontWeight:      500,
+          letterSpacing:   '0.08em',
+          textTransform:   'uppercase',
+          transition:      'background 0.3s ease, border-color 0.3s ease',
+          boxShadow:       '0 4px 20px rgba(0,0,0,0.2)',
+        }}
+      >
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.span
+            key={isDark ? 'moon' : 'sun'}
+            initial={{ rotate: -90, opacity: 0, scale: 0.5 }}
+            animate={{ rotate:   0,  opacity: 1, scale: 1   }}
+            exit={{    rotate:  90,  opacity: 0, scale: 0.5 }}
+            transition={{ duration: 0.25, ease: 'easeOut' }}
+            style={{ display: 'flex', alignItems: 'center' }}
+          >
+            {isDark
+              ? <Sun  size={13} strokeWidth={2} />
+              : <Moon size={13} strokeWidth={2} />
+            }
+          </motion.span>
+        </AnimatePresence>
+
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.span
+            key={isDark ? 'light-label' : 'dark-label'}
+            initial={{ opacity: 0, x: 4 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{    opacity: 0, x:-4 }}
+            transition={{ duration: 0.2 }}
+          >
+            {isDark ? 'Light' : 'Dark'}
+          </motion.span>
+        </AnimatePresence>
+      </motion.button>
+    </motion.div>
+  )
+}
+</file>
+
+<file path="src/components/AnimatedSection.jsx">
+import React, { useRef } from 'react'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
+export default function AnimatedSection({ children, id, className = "", variant = "magneticDrop" }) {
+  const containerRef = useRef(null)
+
+  useGSAP(() => {
+    // 1. Ambil semua elemen anak yang punya class 'gsap-child'
+    const childrenElements = gsap.utils.toArray('.gsap-child')
+    
+    // 2. Setup ScrollTrigger dasar
+    const stConfig = {
+      trigger: containerRef.current,
+      start: "top 85%", // Mulai pas section nyentuh 85% layar dari atas
+      toggleActions: "play none none none" // Cuma jalan sekali (sama kayak viewport once: true)
+    }
+
+    // 3. Eksekusi animasi berdasarkan variant
+    if (variant === 'magneticDrop') {
+      // Animasi Container Utama
+      gsap.fromTo(containerRef.current, 
+        { opacity: 0, y: -120 },
+        { opacity: 1, y: 0, duration: 1, ease: "elastic.out(1, 0.4)", scrollTrigger: stConfig }
+      )
+      // Animasi Anak-anaknya (Stagger)
+      if (childrenElements.length) {
+        gsap.fromTo(childrenElements,
+          { opacity: 0, y: -30 },
+          { opacity: 1, y: 0, duration: 0.8, stagger: 0.15, ease: "elastic.out(1, 0.5)", scrollTrigger: stConfig }
+        )
+      }
+    } 
+    
+    else if (variant === 'cardFlip') {
+      gsap.set(containerRef.current, { transformPerspective: 1000, transformOrigin: 'center bottom' })
+      
+      gsap.fromTo(containerRef.current,
+        { opacity: 0, rotationX: -25 },
+        { opacity: 1, rotationX: 0, duration: 0.8, ease: "back.out(1.7)", scrollTrigger: stConfig }
+      )
+      if (childrenElements.length) {
+        gsap.fromTo(childrenElements,
+          { opacity: 0, x: -40, skewX: 6 },
+          { opacity: 1, x: 0, skewX: 0, duration: 0.6, stagger: 0.15, ease: "power2.out", scrollTrigger: stConfig }
+        )
+      }
+    }
+
+    else if (variant === 'flicker') {
+      // GSAP punya fitur keyframes yang mirip framer motion
+      gsap.to(containerRef.current, {
+        keyframes: {
+          opacity: [0, 0.7, 0.2, 0.9, 0.4, 1],
+          y: [30, 0, 0, 0, 0, 0]
+        },
+        duration: 0.6,
+        scrollTrigger: stConfig
+      })
+      if (childrenElements.length) {
+        gsap.to(childrenElements, {
+          keyframes: {
+            opacity: [0, 0.5, 0, 1],
+            y: [20, 0, 0, 0]
+          },
+          duration: 0.5,
+          stagger: 0.12,
+          scrollTrigger: stConfig
+        })
+      }
+    }
+
+    // Bisa lu lanjutin buat varian rubberBand dan scatter...
+
+  }, { scope: containerRef }) // Scope ini PENTING biar GSAP cuma nyari '.gsap-child' di dalam section ini aja
+
+  return (
+    <section
+      id={id}
+      ref={containerRef}
+      className={`min-h-screen relative z-10 flex flex-col justify-center px-8 md:px-20 ${className}`}
+    >
+      {children}
+    </section>
+  )
+}
+</file>
+
+<file path="src/hooks/useActiveSection.js">
+import { useState, useEffect, useRef } from 'react'
+import { NAV_LINKS } from '../constants/data'
+
+/**
+ * Tracks which section is currently in the viewport
+ * and returns the active section id.
+ */
+export function useActiveSection() {
+  const [activeSection, setActiveSection] = useState('')
+  const observerRef = useRef(null)
+
+  useEffect(() => {
+    const sectionIds = NAV_LINKS.map(link => link.id)
+
+    const callback = (entries) => {
+      // Find the entry with the largest intersection ratio
+      const visible = entries
+        .filter(e => e.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
+
+      if (visible.length > 0) {
+        setActiveSection(visible[0].target.id)
+      }
+    }
+
+    observerRef.current = new IntersectionObserver(callback, {
+      rootMargin: '-40% 0px -40% 0px',
+      threshold:  [0, 0.1, 0.5, 1.0],
+    })
+
+    sectionIds.forEach(id => {
+      const el = document.getElementById(id)
+      if (el) observerRef.current.observe(el)
+    })
+
+    return () => observerRef.current?.disconnect()
+  }, [])
+
+  return activeSection
+}
+
+/**
+ * Smooth scroll to a section by id.
+ */
+export function scrollToSection(id) {
+  const el = document.getElementById(id)
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+</file>
+
+<file path="src/sections/ProjectsSection.jsx">
+import React, { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ExternalLink, FolderGit2 } from 'lucide-react';
+import { PROJECTS } from '../data/portfolioData';
+import AnimatedSection from '../components/AnimatedSection'; // Pastiin path-nya bener!
+
+gsap.registerPlugin(ScrollTrigger);
+
+const GithubIcon = ({ size = 24, className = "" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A4.8 4.8 0 0 0 8 18v4" />
+  </svg>
+);
+
+// Komponen Card Terpisah (FULL GSAP, No Framer Motion)
+const SciFiProjectCard = ({ project, index }) => {
+  // Project pertama (index 0) dibikin span 2 kolom di layar gede biar jadi 'Hero Project'
+  const isFeatured = index === 0;
+
+  const handleMouseEnter = (e) => {
+    const laser = e.currentTarget.querySelector('.laser-line');
+    if (!gsap.isTweening(laser)) {
+      gsap.fromTo(laser, 
+        { top: '0%', opacity: 0 },
+        { 
+          top: '100%', 
+          duration: 1.5, 
+          ease: 'linear', 
+          keyframes: {
+            "0%": { opacity: 0 },
+            "10%": { opacity: 1 },
+            "90%": { opacity: 1 },
+            "100%": { opacity: 0 }
+          }
+        }
+      );
+    }
+  };
+
+  return (
+    <div
+      onMouseEnter={handleMouseEnter}
+      // Tambahin 'gsap-child' ke sini biar ikut ke-stagger sama animasi flicker
+      className={`scifi-project-card gsap-child group relative flex flex-col justify-between p-6 sm:p-8 bg-[var(--bg-card)]/90 backdrop-blur-md overflow-hidden transition-all duration-300 ${
+        isFeatured ? 'col-span-1 md:col-span-2 lg:col-span-2' : 'col-span-1'
+      }`}
+      style={{
+        // Bikin ujung kanan atas terpotong (Sci-Fi Cut)
+        clipPath: 'polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 0 100%)',
+        borderLeft: '4px solid var(--border-subtle)', // Border kiri tebel
+      }}
+    >
+      {/* Dynamic Border Left Hover */}
+      <div className="absolute left-0 top-0 bottom-0 w-1 bg-[var(--accent)] transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top" />
+
+      {/* Cyber Grid Background on Hover */}
+      <div 
+        className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none"
+        style={{
+          backgroundImage: 'linear-gradient(var(--accent) 1px, transparent 1px), linear-gradient(90deg, var(--accent) 1px, transparent 1px)',
+          backgroundSize: '20px 20px'
+        }}
+      />
+
+      {/* Scanning Laser Animation */}
+      <div
+        className="laser-line absolute left-0 right-0 h-[2px] bg-[var(--accent)] blur-[2px] z-20 pointer-events-none opacity-0"
+      />
+
+      <div className="relative z-10 h-full flex flex-col">
+        {/* Top Header: System Index & Icons */}
+        <div className="flex justify-between items-start mb-6">
+          <div className="flex items-center gap-3">
+            <FolderGit2 size={28} strokeWidth={1.5} className="text-[var(--border-subtle)] group-hover:text-[var(--accent)] transition-colors" />
+            <span className="font-mono text-xs text-[var(--text-muted)] opacity-50 uppercase tracking-widest">
+              SYS.PROJ.00{index + 1}
+            </span>
+          </div>
+          
+          <div className="flex gap-4">
+            {project.githubUrl && (
+              <a href={project.githubUrl} target="_blank" rel="noreferrer" className="text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors">
+                <GithubIcon size={20} />
+              </a>
+            )}
+            {project.liveUrl && (
+              <a href={project.liveUrl} target="_blank" rel="noreferrer" className="text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors">
+                <ExternalLink size={20} />
+              </a>
+            )}
+          </div>
+        </div>
+
+        {/* Project Content */}
+        <div className="mb-8 flex-1">
+          <h3 className="text-2xl font-bold text-[var(--text-primary)] mb-3 group-hover:text-[var(--accent)] transition-colors">
+            {project.title}
+          </h3>
+          <p className={`text-sm text-[var(--text-primary)]/60 leading-relaxed ${isFeatured ? 'md:max-w-xl' : ''}`}>
+            {project.description}
+          </p>
+        </div>
+
+        {/* Bottom: Tech Stack */}
+        <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5 relative">
+          {project.techStack.map((tech, i) => (
+            <span 
+              key={i} 
+              className="px-3 py-1 text-[11px] uppercase tracking-wider font-mono text-[var(--text-muted)] bg-white/5 group-hover:text-[var(--accent)] group-hover:bg-[var(--accent)]/10 transition-colors duration-300"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default function ProjectsSection() {
+  const containerRef = useRef(null);
+
+  useGSAP(() => {
+    // Animasi Laser otomatis jalan berurutan pas card masuk layar
+    ScrollTrigger.batch(".scifi-project-card", {
+      start: "top 80%",
+      onEnter: (batch) => {
+        batch.forEach((card, index) => {
+          const laser = card.querySelector('.laser-line');
+          gsap.fromTo(laser, 
+            { top: '0%', opacity: 0 },
+            { 
+              top: '100%', 
+              duration: 1.5, 
+              ease: 'linear', 
+              delay: index * 0.3, // stagger delay
+              keyframes: {
+                "0%": { opacity: 0 },
+                "10%": { opacity: 1 },
+                "90%": { opacity: 1 },
+                "100%": { opacity: 0 }
+              }
+            }
+          );
+        });
+      }
+    });
+  }, { scope: containerRef });
+
+  return (
+    <AnimatedSection id="projects" variant="flicker" className="w-full max-w-6xl mx-auto py-20 px-6 lg:px-20">
+      <div ref={containerRef} className="flex flex-col gap-12">
+        
+        {/* Section Header - Tambahin gsap-child */}
+        <div className="gsap-child flex items-center gap-4">
+          <h2 className="text-2xl md:text-3xl font-mono font-bold text-[var(--text-primary)]">
+            <span className="text-[var(--accent)]">&lt;</span> 02. /projects <span className="text-[var(--accent)]">/&gt;</span>
+          </h2>
+          <div className="flex-1 h-px bg-gradient-to-r from-[var(--border-subtle)] to-transparent" />
+        </div>
+
+        {/* Projects Bento Grid - Hapus motion.div */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {PROJECTS.map((project, index) => (
+            <SciFiProjectCard key={project.id} project={project} index={index} />
+          ))}
+        </div>
+      </div>
+    </AnimatedSection>
+  );
+}
+</file>
+
+<file path="src/App.css">
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+.hero {
+  position: relative;
+
+  .base,
+  .framework,
+  .vite {
+    inset-inline: 0;
+    margin: 0 auto;
+  }
+
+  .base {
+    width: 170px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .framework,
+  .vite {
+    position: absolute;
+  }
+
+  .framework {
+    z-index: 1;
+    top: 34px;
+    height: 28px;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
+      scale(1.4);
+  }
+
+  .vite {
+    z-index: 0;
+    top: 107px;
+    height: 26px;
+    width: auto;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
+      scale(0.8);
+  }
+}
+
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+#next-steps {
+  display: flex;
+  border-top: 1px solid var(--border);
+  text-align: left;
+
+  & > div {
+    flex: 1 1 0;
+    padding: 32px;
+    @media (max-width: 1024px) {
+      padding: 24px 20px;
+    }
+  }
+
+  .icon {
+    margin-bottom: 16px;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#docs {
+  border-right: 1px solid var(--border);
+
+  @media (max-width: 1024px) {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+#next-steps ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  margin: 32px 0 0;
+
+  .logo {
+    height: 18px;
+  }
+
+  a {
+    color: var(--text-h);
+    font-size: 16px;
+    border-radius: 6px;
+    background: var(--social-bg);
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: var(--shadow);
+    }
+    .button-icon {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      flex: 1 1 calc(50% - 8px);
+    }
+
+    a {
+      width: 100%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+  }
+}
+
+#spacer {
+  height: 88px;
+  border-top: 1px solid var(--border);
+  @media (max-width: 1024px) {
+    height: 48px;
+  }
+}
+
+.ticks {
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4.5px;
+    border: 5px solid transparent;
+  }
+
+  &::before {
+    left: 0;
+    border-left-color: var(--border);
+  }
+  &::after {
+    right: 0;
+    border-right-color: var(--border);
+  }
+}
+</file>
+
+<file path="src/App.jsx">
+import { useState, useEffect, lazy, Suspense } from 'react'
+import { LazyMotion, domAnimation } from 'framer-motion'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import gsap from 'gsap'
+import './index.css'
+
+// Layout components
+import Sidebar from './components/layout/Sidebar'
+import ThemeToggle from './components/layout/ThemeToggle'
+import GlobalScrollMouse from './components/layout/GlobalScrollMouse'
+import SpaceParticles from './components/hero/SpaceParticles'
+
+// Active section tracking
+import { useActiveSection } from './hooks/useActiveSection'
+
+// Eager loaded section (Critical Path)
+import HeroSection from './sections/HeroSection'
+
+// Lazy loaded sections
+const AboutSection = lazy(() => import('./sections/AboutSection'))
+const ProjectsSection = lazy(() => import('./sections/ProjectsSection'))
+const TechMarquee = lazy(() => import('./components/TechMarquee').catch(() => ({ default: () => null }))) // Fallback if TechMarquee isn't present
+const ArsenalContactSection = lazy(() => import('./sections/ArsenalContactSection'))
+
+gsap.registerPlugin(ScrollTrigger)
+
+// Lightweight Loader for Suspense boundary
+const SectionLoader = () => (
+  <div className="w-full flex justify-center py-20">
+    <div className="w-8 h-8 rounded-full border-2 border-[var(--accent)] border-t-transparent animate-spin" />
+  </div>
+)
+
+// ── App ──────────────────────────────────────────────────────
+export default function App() {
+  const [isDark, setIsDark] = useState(true)
+  const activeSection = useActiveSection()
+
+  // Apply dark / light class to <html>
+  useEffect(() => {
+    const root = document.documentElement
+    if (isDark) {
+      root.classList.add('dark')
+      root.classList.remove('light')
+    } else {
+      root.classList.add('light')
+      root.classList.remove('dark')
+    }
+  }, [isDark])
+
+  // CRITICAL: ScrollTrigger recalculation when lazy components mount
+  useEffect(() => {
+    const resizeObserver = new ResizeObserver(() => {
+      ScrollTrigger.refresh()
+    })
+    
+    const mainContent = document.getElementById('main-content')
+    if (mainContent) {
+      resizeObserver.observe(mainContent)
+    }
+    
+    return () => resizeObserver.disconnect()
+  }, [])
+
+  const toggleTheme = () => setIsDark(prev => !prev)
+
+  return (
+    <LazyMotion features={domAnimation} strict>
+      {/* Outer shell — full viewport, no overflow */}
+      <div id="app-shell">
+
+        {/* ── GLOBAL DECORATIVE LAYERS ── */}
+        <SpaceParticles />
+        <div className="noise-overlay" aria-hidden="true" />
+        <div className="scan-line" aria-hidden="true" />
+
+        {/* ── GLOBAL SCROLL MOUSE ── */}
+        <GlobalScrollMouse />
+
+        {/* ── FIXED: LEFT SIDEBAR ── */}
+        <Sidebar activeSection={activeSection} />
+
+        {/* ── FIXED: TOP-RIGHT THEME TOGGLE ── */}
+        <ThemeToggle isDark={isDark} onToggle={toggleTheme} />
+
+        {/* ── SCROLLABLE MAIN CONTENT ── */}
+        <main id="main-content" role="main">
+          <HeroSection />
+
+          <Suspense fallback={<SectionLoader />}>
+            <AboutSection />
+            <ProjectsSection />
+            <TechMarquee />
+            <ArsenalContactSection />
+          </Suspense>
+        </main>
+      </div>
+    </LazyMotion>
+  )
+}
+</file>
+
+<file path="src/index.css">
+/* =========================================================
+   PORTFOLIO — index.css
+   Design System: Neo-Tokyo Minimalist / Cyberpunk
+   ========================================================= */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------
+   1. CSS CUSTOM PROPERTIES (Theming)
+   --------------------------------------------------------- */
+
+/* DARK MODE — Default */
+:root,
+.dark {
+  --bg-primary:    #111111;
+  --bg-secondary:  #161616;
+  --bg-card:       #1A1A1A;
+  --bg-card-hover: #222222;
+
+  --text-primary:  #E5E7EB;
+  --text-secondary:#B0B7C3;
+  --text-muted:    #6B7280;
+
+  --accent:        #00E5FF;
+  --accent-dim:    rgba(0, 229, 255, 0.12);
+  --accent-glow:   rgba(0, 229, 255, 0.4);
+
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-accent: rgba(0, 229, 255, 0.3);
+
+  --sidebar-width: 72px;
+  --scrollbar-track: #161616;
+  --scrollbar-thumb: #2a2a2a;
+  --scrollbar-hover: #3a3a3a;
+}
+
+/* LIGHT MODE */
+.light {
+  --bg-primary:    #F8F9FA;
+  --bg-secondary:  #F0F2F5;
+  --bg-card:       #FFFFFF;
+  --bg-card-hover: #F5F5F5;
+
+  --text-primary:  #1A1A1A;
+  --text-secondary:#4B5563;
+  --text-muted:    #9CA3AF;
+
+  --accent:        #005B99;
+  --accent-dim:    rgba(0, 91, 153, 0.10);
+  --accent-glow:   rgba(0, 91, 153, 0.35);
+
+  --border-subtle: rgba(0, 0, 0, 0.07);
+  --border-accent: rgba(0, 91, 153, 0.3);
+
+  --scrollbar-track: #F0F2F5;
+  --scrollbar-thumb: #D1D5DB;
+  --scrollbar-hover: #9CA3AF;
+}
+
+/* ---------------------------------------------------------
+   2. BASE RESET & GLOBAL STYLES
+   --------------------------------------------------------- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-hover); }
+
+/* ---------------------------------------------------------
+   3. SELECTION
+   --------------------------------------------------------- */
+
+::selection {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+/* ---------------------------------------------------------
+   4. LAYOUT — Fixed Shell
+   --------------------------------------------------------- */
+
+#app-shell {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: var(--sidebar-width);
+  z-index: 50;
+  border-right: 1px solid var(--border-subtle);
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  transition: background-color 0.3s ease;
+  /* Allow rotated nav text to overflow visually without scroll */
+  overflow: visible;
+}
+
+#main-content {
+  margin-left: var(--sidebar-width);
+  width: calc(100vw - var(--sidebar-width));
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ---------------------------------------------------------
+   5. COMPONENT UTILITIES
+   --------------------------------------------------------- */
+
+@layer components {
+  /* Accent glow text */
+  .text-glow {
+    text-shadow: 0 0 20px var(--accent-glow), 0 0 40px var(--accent-glow);
+  }
+
+  /* Glassmorphism card */
+  .glass-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .glass-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px var(--accent-glow);
+  }
+
+  /* Terminal window */
+  .terminal-window {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', monospace;
+    transition: background 0.3s ease;
+  }
+
+  .terminal-titlebar {
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .terminal-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* Accent button */
+  .btn-accent {
+    background: var(--accent);
+    color: var(--bg-primary);
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .btn-accent:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px var(--accent-glow);
+  }
+
+  /* Outline button */
+  .btn-outline {
+    background: transparent;
+    color: var(--accent);
+    padding: 11px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    border: 1px solid var(--border-accent);
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .btn-outline:hover {
+    background: var(--accent-dim);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px var(--accent-glow);
+  }
+
+  /* Section heading */
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  /* Tag pill */
+  .tag-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    color: var(--accent);
+    background: var(--accent-dim);
+    border: 1px solid var(--border-accent);
+    letter-spacing: 0.03em;
+  }
+
+  /* Noise overlay */
+  .noise-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0.02;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-size: 128px 128px;
+  }
+}
+
+/* ---------------------------------------------------------
+   6. SECTION BASE
+   --------------------------------------------------------- */
+
+.portfolio-section {
+  padding: 100px 64px 100px 80px;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .portfolio-section {
+    padding: 80px 40px 80px 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --sidebar-width: 56px;
+  }
+  .portfolio-section {
+    padding: 60px 20px 60px 28px;
+  }
+}
+
+/* ---------------------------------------------------------
+   7. SCAN-LINE ANIMATION (subtle cyberpunk touch)
+   --------------------------------------------------------- */
+
+@keyframes scanline {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.scan-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    transparent,
+    var(--accent-glow),
+    transparent
+  );
+  animation: scanline 8s linear infinite;
+  pointer-events: none;
+  z-index: 998;
+  opacity: 0.04;
+}
+
+/* ---------------------------------------------------------
+   8. CURSOR BLINK
+   --------------------------------------------------------- */
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.cursor-blink {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: var(--accent);
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+}
+
+/* ---------------------------------------------------------
+   9. KATAKANA WATERMARK — Hero-scoped, inline-styled in component
+   --------------------------------------------------------- */
+
+/* ---------------------------------------------------------
+   10. NAV LINK STYLES
+   --------------------------------------------------------- */
+
+.nav-link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------
+   11. GRID BACKGROUND EFFECT
+   --------------------------------------------------------- */
+
+.grid-bg {
+  background-image:
+    linear-gradient(var(--border-subtle) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-subtle) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+</file>
+
+<file path="src/main.jsx">
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import './index.css'
+import App from './App.jsx'
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+</file>
+
+<file path=".dockerignore">
+# =============================================================================
+# .dockerignore — portfolio-tatan
+# =============================================================================
+# Files listed here are NEVER sent to the Docker build daemon.
+# This keeps the build context small and prevents secrets / dev artifacts
+# from leaking into the image.
+# =============================================================================
+
+# Development dependencies (rebuilt inside the builder stage via npm ci)
+node_modules/
+
+# Previous production build — the builder stage runs `npm run build` fresh
+dist/
+dist-ssr/
+
+# Version control
+.git/
+.gitignore
+
+# Editor / IDE metadata
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files (never bake secrets into an image)
+.env
+.env.*
+!.env.example
+
+# Docker files themselves (no need to copy these into the image)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# README
+README.md
+</file>
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</file>
+
+<file path="eslint.config.js">
+import js from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import { defineConfig, globalIgnores } from 'eslint/config'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{js,jsx}'],
+    extends: [
+      js.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: {
+      globals: globals.browser,
+      parserOptions: { ecmaFeatures: { jsx: true } },
+    },
+  },
+])
+</file>
+
+<file path="index.html">
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Fathan Mulyasa H. — Full-Stack Developer</title>
+    <meta name="description" content="Full-Stack Developer specializing in React, Laravel, and scalable web solutions. Explore my projects, skills, and get in touch." />
+    <meta name="author" content="Fathan Mulyasa H." />
+    <meta name="keywords" content="Full-Stack Developer, React, Laravel, Livewire, Flutter, Portfolio, Indonesia" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+</file>
+
+<file path="package.json">
+{
+  "name": "portfolio-tatan",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "framer-motion": "^12.38.0",
+    "gsap": "^3.15.0",
+    "lucide-react": "^1.14.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^10.2.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.5.0",
+    "postcss": "^8.5.14",
+    "tailwindcss": "^3.4.19",
+    "vite": "^8.0.10"
+  }
+}
+</file>
+
+<file path="postcss.config.js">
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+</file>
+
+<file path="tailwind.config.js">
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'bg-primary':    'var(--bg-primary)',
+        'bg-secondary':  'var(--bg-secondary)',
+        'bg-card':       'var(--bg-card)',
+        'bg-card-hover': 'var(--bg-card-hover)',
+        'text-primary':  'var(--text-primary)',
+        'text-secondary':'var(--text-secondary)',
+        'text-muted':    'var(--text-muted)',
+        'accent':        'var(--accent)',
+        'accent-dim':    'var(--accent-dim)',
+        'accent-glow':   'var(--accent-glow)',
+        'border-subtle': 'var(--border-subtle)',
+        'border-accent': 'var(--border-accent)',
+      },
+      fontFamily: {
+        sans:  ['Inter', 'system-ui', 'sans-serif'],
+        mono:  ['JetBrains Mono', 'Fira Code', 'monospace'],
+        display: ['Outfit', 'Inter', 'sans-serif'],
+      },
+      animation: {
+        'pulse-slow':    'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'float':         'float 6s ease-in-out infinite',
+        'glow':          'glow 2s ease-in-out infinite alternate',
+        'scroll-bounce': 'scrollBounce 2s ease-in-out infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%':      { transform: 'translateY(-20px)' },
+        },
+        glow: {
+          '0%':   { boxShadow: '0 0 5px var(--accent-glow)' },
+          '100%': { boxShadow: '0 0 20px var(--accent-glow), 0 0 40px var(--accent-glow)' },
+        },
+        scrollBounce: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%':      { transform: 'translateY(6px)' },
+        },
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':  'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      backdropBlur: {
+        xs: '2px',
+      },
+    },
+  },
+  plugins: [],
+}
+</file>
+
+<file path="vite.config.js">
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
+</file>
+
+<file path="src/components/layout/Sidebar.jsx">
+import { m as motion } from 'framer-motion'
+import { useState } from 'react'
+import { NAV_LINKS, SITE_META } from '../../constants/data'
+
+// ── Stagger helpers ──────────────────────────────────────────
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.3,
+    },
+  },
+}
+
+const itemVariants = {
+  hidden: {
+    opacity: 0,
+    y: 8,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.45,
+      ease: 'easeOut',
+    },
+  },
+}
+
+// ── Inline SVG Social Icons ──────────────────────────────────
+function GithubIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.51.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2z" />
+    </svg>
+  )
+}
+
+function InstagramIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5" />
+      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  )
+}
+
+function LinkedinIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  )
+}
+
+function XIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817-5.964 6.817H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" />
+    </svg>
+  )
+}
+
+// ── Logo ─────────────────────────────────────────────────────
+function Logo() {
+  const [isHovered, setIsHovered] = useState(false)
+
+  return (
+    <motion.a
+      href="#hero"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, ease: 'backOut' }}
+      className="group flex flex-col items-center gap-1 select-none no-underline cursor-pointer"
+      aria-label="Home"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Square logo mark with rotating border */}
+      <div className="relative w-9 h-9 flex items-center justify-center">
+        <motion.div
+          className="absolute inset-0 rounded-md"
+          style={{
+            border: '1px solid var(--border-accent)',
+          }}
+          animate={{ rotate: [0, 360] }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: 'linear',
+          }}
+        />
+
+        {/* Glowing center dot */}
+        <motion.div
+          className="w-2 h-2 rounded-full"
+          animate={{
+            scale: isHovered ? 1.5 : 1,
+          }}
+          transition={{
+            duration: 0.3,
+          }}
+          style={{
+            background: 'var(--accent)',
+            boxShadow: '0 0 8px var(--accent-glow)',
+          }}
+        />
+      </div>
+
+      {/* Monogram */}
+      <motion.span
+        className="font-mono text-[9px] font-bold tracking-[0.2em] uppercase"
+        style={{
+          backgroundImage:
+            'linear-gradient(to top, var(--accent) 50%, var(--text-muted) 50%)',
+          backgroundSize: '100% 200%',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          color: 'transparent',
+        }}
+        initial={{
+          backgroundPosition: '0% 100%',
+        }}
+        animate={{
+          backgroundPosition: isHovered ? '0% 0%' : '0% 100%',
+        }}
+        transition={{
+          duration: 0.3,
+          ease: 'easeInOut',
+        }}
+      >
+        FM
+      </motion.span>
+    </motion.a>
+  )
+}
+
+// ── Nav Item Component ───────────────────────────────────────
+function NavItem({ link, isActive, onClick }) {
+  const [isHovered, setIsHovered] = useState(false)
+
+  return (
+    <motion.a
+      href={link.href}
+      variants={itemVariants}
+      onClick={(e) => onClick(e, link.href)}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      aria-current={isActive ? 'page' : undefined}
+      style={{
+        position: 'relative',
+        writingMode: 'vertical-lr',
+        textOrientation: 'upright',
+        textTransform: 'uppercase',
+        fontFamily: "'JetBrains Mono', monospace",
+        fontSize: '0.90rem',
+        fontWeight: 900,
+        letterSpacing: '-0.25em',
+        lineHeight: '0.85',
+        textDecoration: 'none',
+        paddingLeft: '2px',
+        cursor: 'pointer',
+        userSelect: 'none',
+        display: 'flex',
+      }}
+    >
+      {/* Animated line on the left */}
+      <motion.span
+        initial={{
+          height: isActive ? '100%' : '0%',
+        }}
+        animate={{
+          height: isActive || isHovered ? '100%' : '0%',
+        }}
+        transition={{
+          duration: 0.35,
+          ease: 'easeInOut',
+        }}
+        style={{
+          position: 'absolute',
+          left: 0,
+          bottom: 0,
+          width: '2px',
+          backgroundColor: 'var(--accent)',
+          borderRadius: '2px',
+        }}
+      />
+
+      {/* Text color fill animation */}
+      <motion.span
+        style={{
+          backgroundImage:
+            'linear-gradient(to top, var(--accent) 50%, var(--text-muted) 50%)',
+          backgroundSize: '100% 200%',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          color: 'transparent',
+        }}
+        initial={{
+          backgroundPosition: '0% 0%',
+        }}
+        animate={{
+          backgroundPosition:
+            isActive || isHovered ? '0% 100%' : '0% 0%',
+        }}
+        transition={{
+          duration: 0.35,
+          ease: 'easeInOut',
+        }}
+      >
+        {link.label}
+      </motion.span>
+    </motion.a>
+  )
+}
+
+// ── Vertical Nav ─────────────────────────────────────────────
+function VerticalNav({ activeSection }) {
+  const handleClick = (e, href) => {
+    e.preventDefault()
+
+    const target = document.querySelector(href)
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+      })
+    }
+  }
+
+  return (
+    <motion.nav
+      variants={containerVariants}
+      initial="hidden"
+      animate="show"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '16px',
+      }}
+      aria-label="Main navigation"
+    >
+      {NAV_LINKS.map((link) => (
+        <NavItem
+          key={link.id}
+          link={link}
+          isActive={activeSection === link.id}
+          onClick={handleClick}
+        />
+      ))}
+    </motion.nav>
+  )
+}
+
+// ── Social Icons ─────────────────────────────────────────────
+function SocialIcons() {
+  const socials = [
+    {
+      id: 'github',
+      href: SITE_META.github,
+      Icon: GithubIcon,
+      label: 'GitHub',
+    },
+    {
+      id: 'instagram',
+      href: SITE_META.instagram,
+      Icon: InstagramIcon,
+      label: 'Instagram',
+    },
+    {
+      id: 'linkedin',
+      href: SITE_META.linkedin,
+      Icon: LinkedinIcon,
+      label: 'LinkedIn',
+    },
+    {
+      id: 'x',
+      href: SITE_META.x,
+      Icon: XIcon,
+      label: 'X',
+    },
+  ]
+
+  return (
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="show"
+      className="flex flex-col items-center gap-4"
+    >
+      {/* Vertical separator */}
+      <motion.div
+        initial={{ scaleY: 0 }}
+        animate={{ scaleY: 1 }}
+        transition={{
+          delay: 0.8,
+          duration: 0.5,
+          ease: 'easeOut',
+        }}
+        className="w-px h-6 origin-top"
+        style={{
+          background: 'var(--border-subtle)',
+        }}
+      />
+
+      {socials.map(({ id, href, Icon, label }) => (
+        <motion.a
+          key={id}
+          id={`social-${id}`}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          variants={itemVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          style={{
+            color: 'var(--text-muted)',
+            display: 'flex',
+            transition: 'color 0.2s ease',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = 'var(--accent)'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = 'var(--text-muted)'
+          }}
+          aria-label={label}
+        >
+          <Icon />
+        </motion.a>
+      ))}
+    </motion.div>
+  )
+}
+
+// ── Main Sidebar ─────────────────────────────────────────────
+export default function Sidebar({ activeSection }) {
+  return (
+    <motion.aside
+      id="sidebar"
+      className="fixed left-0 top-0 h-screen w-20 flex flex-col items-center justify-between py-5 z-50 border-r border-white/5 bg-bg-primary"
+      initial={{
+        x: -80,
+        opacity: 0,
+      }}
+      animate={{
+        x: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.6,
+        ease: 'easeOut',
+      }}
+      aria-label="Site sidebar"
+    >
+      <Logo />
+
+      <VerticalNav activeSection={activeSection} />
+
+      <SocialIcons />
+    </motion.aside>
+  )
+}
+</file>
+
+<file path="src/sections/HeroSection.jsx">
+import KatakanaWatermark from '../components/layout/KatakanaWatermark'
+import AnimatedSection from '../components/AnimatedSection' // Pastiin path import-nya bener ya!
+
+export default function HeroSection() {
+  const handleScrollToProjects = () => {
+    const target = document.getElementById('projects')
+    if (target) target.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const handleScrollToContact = () => {
+    const target = document.getElementById('contact')
+    if (target) target.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  return (
+    <AnimatedSection
+      id="hero"
+      variant="magneticDrop"
+      className="overflow-hidden py-20 px-6 lg:px-20"
+    >
+      {/* Katakana watermark — scoped to hero section only */}
+      <KatakanaWatermark />
+
+      {/* Container utama, nggak perlu logic motion lagi di sini */}
+      <div className="relative z-10 max-w-4xl">
+        
+        {/* ANAK 1: System Status Badge (Tambahin 'gsap-child') */}
+        <div className="gsap-child mb-8 flex items-center gap-3 px-4 py-1.5 w-max rounded-full border border-[var(--border-subtle)] bg-[var(--bg-secondary)]/50 backdrop-blur-sm">
+          <div className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 dark:bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-600 dark:bg-emerald-500"></span>
+          </div>
+          <span className="text-xs font-mono tracking-widest text-[var(--text-muted)] uppercase">
+            Open to Opportunities
+          </span>
+        </div>
+
+        {/* ANAK 2: Small greeting/name (Tambahin 'gsap-child') */}
+        <p className="gsap-child font-mono text-[var(--accent)] text-sm md:text-base tracking-widest mb-4 flex items-center gap-3">
+          <span className="w-8 h-[1px] bg-[var(--accent)]"></span>
+          Hello, I'm Fathan.
+        </p>
+
+        {/* ANAK 3: Huge Headline (Tambahin 'gsap-child') */}
+        <h1 className="gsap-child font-display font-black text-4xl sm:text-6xl lg:text-8xl leading-[1.1] tracking-tight mb-6 text-[var(--text-primary)]">
+          Full-Stack <span className="text-[var(--text-muted)] font-light">+</span> <br />
+          <span
+            style={{
+              backgroundImage: 'linear-gradient(135deg, var(--accent) 0%, var(--text-primary) 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              color: 'transparent',
+            }}
+          >
+            Developer
+          </span>
+          {/* Lightweight Blinking Cursor pake Tailwind murni */}
+          <span className="inline-block w-4 md:w-6 h-[0.8em] bg-[var(--accent)] ml-2 align-baseline animate-pulse" />
+        </h1>
+
+        {/* ANAK 4: Subtitle (Tambahin 'gsap-child') */}
+        <p className="gsap-child text-[var(--text-primary)]/70 max-w-xl text-lg md:text-xl leading-relaxed mb-10">
+          Fresh Graduate developer with internship and personal project experience, eager to learn, collaborate, and build meaningful software.
+        </p>
+
+        {/* ANAK 5: CTA Buttons (Tambahin 'gsap-child') */}
+        <div className="gsap-child flex flex-wrap gap-4">
+          <button
+            onClick={handleScrollToContact}
+            className="px-6 py-3 font-mono text-[var(--bg-primary)] bg-[var(--accent)] hover:bg-[var(--accent)]/90 hover:shadow-[0_0_20px_var(--accent)] transition-all duration-300 rounded-md font-bold uppercase tracking-wider text-sm"
+          >
+            Get In Touch
+          </button>
+          <button
+            onClick={handleScrollToProjects}
+            className="px-6 py-3 font-mono text-[var(--text-primary)] border border-[var(--border-subtle)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-300 rounded-md font-bold uppercase tracking-wider text-sm"
+          >
+            Browse Projects
+          </button>
+        </div>
+        
+      </div>
+    </AnimatedSection>
+  )
+}
+</file>
+
+<file path="Dockerfile">
+# =============================================================================
+# Dockerfile — portfolio-tatan
+# Framework : React 19 + Vite 8 (static SPA)
+# Runtime   : Node.js 20 (build only), Nginx Alpine (runtime)
+# Strategy  : Multi-stage build — builder stage is discarded at runtime,
+#             keeping the final image small (~25 MB vs ~400 MB).
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Stage 1 — BUILDER
+# Installs dependencies and compiles the Vite production bundle.
+# This entire stage is discarded after the build; only the /app/dist artifact
+# is carried forward, so no node_modules end up in the final image.
+# -----------------------------------------------------------------------------
+FROM node:20-alpine AS builder
+
+# Security: run as a non-root user during the build
+WORKDIR /app
+
+# Copy manifests first so Docker layer-caches npm install independently
+# from source changes. Re-installing only happens when package*.json changes.
+COPY package.json package-lock.json ./
+
+# Use ci instead of install: faster, deterministic, respects lock-file exactly
+RUN npm ci --frozen-lockfile
+
+# Copy the rest of the source
+COPY . .
+
+# Produce the production bundle
+RUN npm run build
+
+# -----------------------------------------------------------------------------
+# Stage 2 — RUNTIME (final image)
+# Minimal Nginx Alpine image that serves the compiled static files.
+# No Node.js, no source code, no devDependencies — just static assets + Nginx.
+# -----------------------------------------------------------------------------
+FROM nginx:1.27-alpine
+
+# Remove the default Nginx welcome page
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy compiled assets from the builder stage
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+# Copy our custom Nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Nginx runs on port 80 inside the container.
+# We do NOT publish this port to the host — Nginx Proxy Manager reaches
+# it through the shared proxy-tier Docker network instead.
+EXPOSE 80
+
+# Nginx foreground mode (required in containers)
+CMD ["nginx", "-g", "daemon off;"]
+</file>
+
+<file path="nginx.conf">
+server {
+    listen 80;
+    server_name _;
+
+    root /usr/share/nginx/html;
+    index index.html;
+
+    # --- Security headers -------------------------------------------------------
+    # These are lightweight additions; your NPM instance can also add these.
+    add_header X-Frame-Options       "SAMEORIGIN"   always;
+    add_header X-Content-Type-Options "nosniff"     always;
+    add_header Referrer-Policy       "strict-origin-when-cross-origin" always;
+
+    # --- Aggressive caching for hashed static assets ----------------------------
+    # Vite appends content hashes to JS/CSS/image filenames (e.g. main.a1b2c3.js),
+    # so it is safe to cache them indefinitely in the browser.
+    location ~* \.(js|css|woff2?|ttf|otf|eot|ico|svg|png|jpg|jpeg|gif|webp|avif)$ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+        access_log off;
+        try_files $uri =404;
+    }
+
+    # --- SPA fallback -----------------------------------------------------------
+    # Any path that is not a real file is served as index.html so that the
+    # React Router (or any client-side router) can handle it.
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # --- Gzip compression -------------------------------------------------------
+    gzip on;
+    gzip_vary on;
+    gzip_proxied any;
+    gzip_comp_level 6;
+    gzip_types
+        text/plain
+        text/css
+        text/javascript
+        application/javascript
+        application/json
+        application/xml
+        image/svg+xml;
+
+    # --- Hide Nginx version from responses --------------------------------------
+    server_tokens off;
+}
+</file>
+
+<file path="src/components/TechMarquee.jsx">
+import React, { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const ROW1_TECH = ["React", "Laravel", "TypeScript", "GSAP", "Framer Motion", "Tailwind CSS", "Flutter", "Livewire", "MongoDB", "Prisma", "ASP.Net Core"];
+const ROW2_TECH = ["Claude", "Gemini", "OpenClaw", "Docker", "Cursor", "Antigravity", "Figma", "Postman", "Linux", "Next.js", "PostgreSQL"];
+
+const TechItem = ({ children }) => (
+  <div className="flex items-center justify-center px-6 py-3 border border-[var(--border-subtle)] bg-[var(--bg-card)]/50 backdrop-blur-sm rounded-lg whitespace-nowrap text-[var(--text-primary)] font-mono text-sm shadow-sm hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors duration-300">
+    {children}
+  </div>
+);
+
+export default function TechMarquee() {
+  const marqueeRef = useRef(null);
+  const row1Ref = useRef(null);
+  const row2Ref = useRef(null);
+
+  useGSAP(() => {
+    // Row 1: Moves RIGHT. Start at -50%, animate to 0%
+    gsap.set(row1Ref.current, { xPercent: -50 });
+    const row1Tween = gsap.to(row1Ref.current, {
+      xPercent: 0,
+      ease: "none",
+      duration: 35,
+      repeat: -1,
+    });
+
+    // Row 2: Moves LEFT. Start at 0%, animate to -50%
+    const row2Tween = gsap.to(row2Ref.current, {
+      xPercent: -50,
+      ease: "none",
+      duration: 35,
+      repeat: -1,
+    });
+
+    // Velocity Scrub Effect
+    ScrollTrigger.create({
+      trigger: marqueeRef.current,
+      start: "top bottom",
+      end: "bottom top",
+      onUpdate: (self) => {
+        // self.getVelocity() returns pixels per second. 
+        const velocity = Math.abs(self.getVelocity());
+        
+        // Map velocity to a timeScale value (e.g., base speed is 1x, fast scroll is up to 6x)
+        const targetTimeScale = gsap.utils.clamp(1, 6, 1 + velocity / 400);
+
+        // Smoothly animate the timeScale of our tweens to create that inertia effect
+        gsap.to([row1Tween, row2Tween], {
+          timeScale: targetTimeScale,
+          duration: 0.15, // quick reaction
+          overwrite: true
+        });
+
+        // Slow back down smoothly when scrolling stops
+        gsap.to([row1Tween, row2Tween], {
+          timeScale: 1,
+          duration: 1.2, // slower recovery
+          delay: 0.1,
+          overwrite: "auto"
+        });
+      }
+    });
+  }, { scope: marqueeRef });
+
+  return (
+    <div ref={marqueeRef} className="w-full overflow-hidden py-16 relative bg-[var(--bg-primary)]">
+      {/* Subtle overlay gradients to fade out edges */}
+      <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[var(--bg-primary)] to-transparent z-10 pointer-events-none" />
+      <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[var(--bg-primary)] to-transparent z-10 pointer-events-none" />
+
+      <div className="flex flex-col gap-6">
+        {/* ROW 1 */}
+        <div 
+          className="flex w-max gap-6" 
+          ref={row1Ref}
+          style={{ willChange: "transform" }}
+        >
+          {/* Render twice for seamless loop */}
+          {[...ROW1_TECH, ...ROW1_TECH].map((tech, i) => (
+            <TechItem key={`row1-${i}`}>{tech}</TechItem>
+          ))}
+        </div>
+
+        {/* ROW 2 */}
+        <div 
+          className="flex w-max gap-6" 
+          ref={row2Ref}
+          style={{ willChange: "transform", marginLeft: "-4rem" }}
+        >
+          {/* Render twice for seamless loop */}
+          {[...ROW2_TECH, ...ROW2_TECH].map((tech, i) => (
+            <TechItem key={`row2-${i}`}>{tech}</TechItem>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/sections/AboutSection.jsx">
+import React, { useState, useEffect, useRef } from 'react';
+import { m as motion } from 'framer-motion';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import AnimatedSection from '../components/AnimatedSection';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const lines = [
+  [
+    { text: "const ", className: "text-[var(--accent)]" },
+    { text: "fathan ", className: "text-cyan-700 dark:text-cyan-400" },
+    { text: "= ", className: "text-[var(--accent)]" },
+    { text: "{", className: "text-yellow-600 dark:text-yellow-400" }
+  ],
+  [
+    { text: "  name: ", className: "text-emerald-700 dark:text-emerald-400" },
+    { text: '"Fathan Mulyasa H."', className: "text-amber-600 dark:text-amber-300" },
+    { text: ",", className: "text-[var(--text-primary)]" }
+  ],
+  [
+    { text: "  role: ", className: "text-emerald-700 dark:text-emerald-400" },
+    { text: '"Fresh Graduate Full-Stack Developer"', className: "text-amber-600 dark:text-amber-300" },
+    { text: ",", className: "text-[var(--text-primary)]" }
+  ],
+  [
+    { text: "  education: ", className: "text-emerald-700 dark:text-emerald-400" },
+    { text: '"SMK RPL Graduate (2026)"', className: "text-amber-600 dark:text-amber-300" },
+    { text: ",", className: "text-[var(--text-primary)]" }
+  ],
+  [
+    { text: "  experience: ", className: "text-emerald-700 dark:text-emerald-400" },
+    { text: '"Internship + Personal Projects"', className: "text-amber-600 dark:text-amber-300" },
+    { text: ",", className: "text-[var(--text-primary)]" }
+  ],
+  [
+    { text: "  techStack: ", className: "text-emerald-700 dark:text-emerald-400" },
+    { text: "[", className: "text-yellow-600 dark:text-yellow-400" },
+    { text: '"ASP.NET Core"', className: "text-amber-600 dark:text-amber-300" },
+    { text: ", ", className: "text-[var(--text-primary)]" },
+    { text: '"Laravel"', className: "text-amber-600 dark:text-amber-300" },
+    { text: ", ", className: "text-[var(--text-primary)]" },
+    { text: '"React"', className: "text-amber-600 dark:text-amber-300" },
+    { text: ", ", className: "text-[var(--text-primary)]" },
+    { text: '"PostgreSQL"', className: "text-amber-600 dark:text-amber-300" },
+    { text: "]", className: "text-yellow-600 dark:text-yellow-400" },
+    { text: ",", className: "text-[var(--text-primary)]" }
+  ],
+  [
+    { text: "  currentlyLearning: ", className: "text-emerald-700 dark:text-emerald-400" },
+    { text: "[", className: "text-yellow-600 dark:text-yellow-400" },
+    { text: '"Clean Architecture"', className: "text-amber-600 dark:text-amber-300" },
+    { text: ", ", className: "text-[var(--text-primary)]" },
+    { text: '"Software Design"', className: "text-amber-600 dark:text-amber-300" },
+    { text: ", ", className: "text-[var(--text-primary)]" },
+    { text: '"Docker"', className: "text-amber-600 dark:text-amber-300" },
+    { text: "]", className: "text-yellow-600 dark:text-yellow-400" },
+    { text: ",", className: "text-[var(--text-primary)]" }
+  ],
+  [
+    { text: "  goal: ", className: "text-emerald-700 dark:text-emerald-400" },
+    { text: '"Grow into a reliable Software Engineer through continuous learning."', className: "text-amber-600 dark:text-amber-300" }
+  ],
+  [
+    { text: "};", className: "text-yellow-600 dark:text-yellow-400" }
+  ]
+];
+
+const totalChars = lines.reduce((acc, line) => {
+  return acc + line.reduce((lineAcc, token) => lineAcc + token.text.length, 0);
+}, 0);
+
+function useTypingEffect(totalChars, typingSpeed = 20) {
+  const [visibleChars, setVisibleChars] = useState(0);
+  const [isTyping, setIsTyping] = useState(false);
+
+  useEffect(() => {
+    if (!isTyping) return;
+
+    if (visibleChars < totalChars) {
+      const timeout = setTimeout(() => {
+        setVisibleChars((prev) => prev + 1);
+      }, typingSpeed);
+      return () => clearTimeout(timeout);
+    }
+  }, [visibleChars, isTyping, totalChars, typingSpeed]);
+
+  const startTyping = () => {
+    if (!isTyping && visibleChars === 0) {
+      setIsTyping(true);
+    }
+  };
+
+  return { visibleChars, startTyping, isComplete: visibleChars === totalChars };
+}
+
+// --- KOMPONEN ORNAMEN KIRI (System Metrics) ---
+const LeftHUD = () => (
+  // Tambahin 'gsap-child' biar di-stagger pas masuk
+  <div className="left-hud gsap-child hidden lg:flex flex-col gap-6 w-32 shrink-0 opacity-40 select-none" style={{ willChange: 'transform' }}>
+    <div className="font-mono text-[10px] text-[var(--text-muted)] tracking-widest border-b border-[var(--border-subtle)] pb-2 mb-2">
+      // SYS.METRICS
+    </div>
+    
+    <div className="space-y-4">
+      {[
+        { label: 'CPU.USAGE', value: '42%' },
+        { label: 'MEM.ALLOC', value: '2.4GB' },
+        { label: 'NET.UPLINK', value: '1.2Gbps' }
+      ].map((stat, i) => (
+        <div key={i} className="flex flex-col gap-1">
+          <div className="flex justify-between text-[10px] font-mono text-[var(--text-primary)]">
+            <span>{stat.label}</span>
+            <span className="text-[var(--accent)]">{stat.value}</span>
+          </div>
+          <div className="w-full h-[2px] bg-[var(--border-subtle)]/30 rounded-full overflow-hidden">
+            <motion.div 
+              className="h-full bg-[var(--accent)]"
+              initial={{ width: '10%' }}
+              animate={{ width: [`${20 + i*15}%`, `${60 + i*10}%`, `${20 + i*15}%`] }}
+              transition={{ duration: 3 + i, repeat: Infinity, ease: "easeInOut" }}
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div className="mt-auto pt-8">
+      <div className="w-16 h-16 border border-[var(--accent)]/30 rounded-full flex items-center justify-center relative">
+        <motion.div 
+          className="absolute inset-2 border border-[var(--text-muted)]/30 rounded-full border-t-[var(--accent)]"
+          animate={{ rotate: 360 }}
+          transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+        />
+        <span className="font-mono text-[9px] text-[var(--accent)]">ACTV</span>
+      </div>
+    </div>
+  </div>
+);
+
+// --- KOMPONEN ORNAMEN KANAN (Data Stream / Grid) ---
+const RightHUD = () => (
+  // Tambahin 'gsap-child'
+  <div className="right-hud gsap-child hidden lg:flex flex-col items-end gap-6 w-32 shrink-0 opacity-40 select-none text-right" style={{ willChange: 'transform' }}>
+    <div className="font-mono text-[10px] text-[var(--text-muted)] tracking-widest border-b border-[var(--border-subtle)] pb-2 mb-2 w-full">
+      // DATA.STREAM
+    </div>
+
+    <div className="grid grid-cols-4 gap-1.5 w-full max-w-[80px]">
+      {Array.from({ length: 24 }).map((_, i) => (
+        <motion.div 
+          key={i}
+          className="w-full aspect-square bg-[var(--border-subtle)] rounded-sm"
+          animate={{ opacity: [0.2, 0.8, 0.2] }}
+          transition={{ 
+            duration: Math.random() * 2 + 1, 
+            repeat: Infinity, 
+            delay: Math.random() * 2 
+          }}
+          style={{
+            backgroundColor: Math.random() > 0.8 ? 'var(--accent)' : 'var(--border-subtle)'
+          }}
+        />
+      ))}
+    </div>
+
+    <div className="mt-auto flex flex-col items-end gap-1">
+      <span className="font-mono text-[9px] text-[var(--text-primary)]">RUNTIME_ENV</span>
+      <span className="font-mono text-[9px] text-[var(--accent)] animate-pulse">NODE_V18.17.0</span>
+      <span className="font-mono text-[9px] text-[var(--text-primary)] mt-2">ENCRYPTION</span>
+      <span className="font-mono text-[9px] text-[var(--accent)]">SHA-256</span>
+    </div>
+  </div>
+);
+
+export default function AboutSection() {
+  const containerRef = useRef(null);
+  const { visibleChars, startTyping, isComplete } = useTypingEffect(totalChars, 20);
+  let charsRendered = 0;
+
+  useGSAP(() => {
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 1024px)", () => {
+      // Animasi Parallax Ornamen Kiri
+      gsap.to(".left-hud", {
+        y: 100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1.5,
+        }
+      });
+
+      // Animasi Parallax Ornamen Kanan
+      gsap.to(".right-hud", {
+        y: 200,
+        ease: "none",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1.5,
+        }
+      });
+
+      // Animasi Parallax Terminal Box
+      gsap.to(".terminal-box", {
+        y: 80, 
+        ease: "none",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1.5,
+        }
+      });
+    });
+  }, { scope: containerRef });
+
+  return (
+    <AnimatedSection 
+      id="about"
+      variant="cardFlip" // <--- Ganti variant di sini
+      className="w-full max-w-7xl mx-auto py-20 px-6 lg:px-20"
+    >
+      <div ref={containerRef} className="flex flex-col gap-8">
+        
+        {/* Section Header */}
+        <div className="gsap-child flex items-center gap-4 max-w-4xl mx-auto w-full">
+          <h2 className="text-2xl md:text-3xl font-mono font-bold text-[var(--text-primary)]">
+            <span className="text-[var(--accent)]">&lt;</span> 01. /whoami <span className="text-[var(--accent)]">/&gt;</span>
+          </h2>
+          <div className="flex-1 h-px bg-gradient-to-r from-[var(--border-subtle)] to-transparent" />
+        </div>
+
+        {/* CONTAINER UTAMA */}
+        <div className="flex justify-center items-stretch gap-8 lg:gap-16 w-full" onMouseEnter={startTyping} onTouchStart={startTyping}>
+          
+          <LeftHUD />
+
+          {/* Terminal Box (Tengah) - Tambahin 'gsap-child' */}
+          <div 
+            className="terminal-box gsap-child rounded-xl overflow-hidden border border-[var(--border-subtle)] bg-[var(--bg-card)]/90 backdrop-blur-md shadow-2xl relative w-full max-w-3xl"
+            style={{ willChange: 'transform' }}
+          >
+            {/* Subtle Accent Glow */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[var(--accent)]/10 to-transparent pointer-events-none" />
+
+            {/* Mac-style Header */}
+            <div className="flex items-center px-4 py-3 border-b border-[var(--border-subtle)] bg-[var(--bg-secondary)] relative z-10">
+              <div className="flex space-x-2">
+                <div className="w-3 h-3 rounded-full bg-red-500/80" />
+                <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                <div className="w-3 h-3 rounded-full bg-green-500/80" />
+              </div>
+              <div className="absolute left-1/2 -translate-x-1/2 text-xs font-mono text-[var(--text-muted)]">
+                fathan@portfolio:~
+              </div>
+            </div>
+
+            {/* Code Content */}
+            <div className="p-4 sm:p-6 overflow-x-auto relative z-10 min-h-[300px] sm:min-h-[250px]">
+              <div className="table">
+                {lines.map((line, lineIndex) => {
+                  if (charsRendered >= visibleChars) return null;
+
+                  return (
+                    <div key={lineIndex} className="table-row font-mono text-sm sm:text-base leading-relaxed sm:leading-loose">
+                      <div className="table-cell text-right pr-4 sm:pr-6 select-none text-[var(--text-muted)] opacity-50">
+                        {lineIndex + 1}
+                      </div>
+                      <div className="table-cell whitespace-pre-wrap text-[var(--text-primary)]">
+                        {line.map((token, tokenIndex) => {
+                          if (charsRendered >= visibleChars) return null;
+
+                          let textToRender = token.text;
+                          const remainingChars = visibleChars - charsRendered;
+                          let isLastRenderedToken = false;
+
+                          if (remainingChars <= token.text.length) {
+                            textToRender = token.text.slice(0, remainingChars);
+                            isLastRenderedToken = true;
+                          }
+
+                          charsRendered += token.text.length;
+
+                          return (
+                            <span key={tokenIndex} className={token.className}>
+                              {textToRender}
+                              {isLastRenderedToken && !isComplete && (
+                                <span className="inline-block w-2 sm:w-2.5 h-4 sm:h-5 ml-[2px] bg-[var(--accent)] animate-pulse align-middle" />
+                              )}
+                              {isComplete && tokenIndex === line.length - 1 && lineIndex === lines.length - 1 && (
+                                <span className="inline-block w-2 sm:w-2.5 h-4 sm:h-5 ml-[2px] bg-[var(--accent)] animate-pulse align-middle" />
+                              )}
+                            </span>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
+          <RightHUD />
+
+        </div>
+      </div>
+    </AnimatedSection>
+  );
+}
+</file>
+
+<file path=".github/workflows/deploy.yml">
+name: Build and Deploy
+on:
+  push:
+    branches: [main]
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout kode
+        uses: actions/checkout@v4
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Convert image name ke lowercase
+        run: echo "IMAGE_NAME_LOWER=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+      - name: Login ke GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build & push image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}:latest
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+</file>
+
+<file path="src/constants/data.js">
+// =========================================================
+//  constants/data.js  —  All static site data lives here
+// =========================================================
+
+export const SITE_META = {
+  name: 'Fathan Mulyasa H.',
+  role: 'Full-Stack Developer',
+  tagline: 'Building scalable solutions with a focus on clean code and user experience.',
+  email: 'fathanmh26@gmail.com',   // ← replace with real email
+  github: 'https://github.com/itsxianzhing',
+  instagram: 'https://instagram.com/itsxianzhing',
+  linkedin: 'https://www.linkedin.com/in/fathan-mulyasa-h-599470371/',
+  x: 'https://x.com/itsxianzhing'
+};
+
+// ---------------------------------------------------------
+//  Navigation
+// ---------------------------------------------------------
+
+export const NAV_LINKS = [
+  { id: 'about', label: 'ABOUT', href: '#about' },
+  { id: 'projects', label: 'PROJECT', href: '#projects' },
+  { id: 'contact', label: 'CONTACT', href: '#contact' },
+];
+
+// ---------------------------------------------------------
+//  Tech Stack / Arsenal
+// ---------------------------------------------------------
+
+export const TECH_STACK = [
+  // Frontend
+  { id: 'react', label: 'React', category: 'Frontend', icon: '⚛️' },
+  { id: 'tailwind', label: 'Tailwind CSS', category: 'Frontend', icon: '🎨' },
+  { id: 'framer', label: 'Framer Motion', category: 'Frontend', icon: '🎞️' },
+  { id: 'flutter', label: 'Flutter', category: 'Mobile', icon: '📱' },
+  // Backend
+  { id: 'laravel', label: 'Laravel', category: 'Backend', icon: '🔴' },
+  { id: 'livewire', label: 'Livewire 3', category: 'Backend', icon: '⚡' },
+  { id: 'node', label: 'Node.js', category: 'Backend', icon: '🟢' },
+  // Database
+  { id: 'mysql', label: 'MySQL', category: 'Database', icon: '🐬' },
+  // AI / Tooling
+  { id: 'cursor', label: 'Cursor', category: 'AI Tools', icon: '🖱️' },
+  { id: 'gemini', label: 'Gemini', category: 'AI Tools', icon: '♊' },
+  { id: 'claude', label: 'Claude', category: 'AI Tools', icon: '🤖' },
+  { id: 'git', label: 'Git', category: 'DevOps', icon: '🌿' },
+];
+
+// ---------------------------------------------------------
+//  About / Terminal lines
+// ---------------------------------------------------------
+
+export const TERMINAL_LINES = [
+  { type: 'prompt', content: 'whoami' },
+  { type: 'output', content: 'fathan-mulyasa — Fresh Graduate Full-Stack Developer' },
+
+  { type: 'blank', content: '' },
+
+  { type: 'prompt', content: 'cat journey.txt' },
+  { type: 'output', content: 'Started learning web development with PHP and MySQL.' },
+  { type: 'output', content: 'Built web applications through internship and personal projects.' },
+  { type: 'output', content: 'Currently learning ASP.NET Core while improving my React and Laravel skills.' },
+  { type: 'output', content: 'Always curious, always learning.' },
+
+  { type: 'blank', content: '' },
+
+  { type: 'prompt', content: 'cat goals.txt' },
+  { type: 'output', content: '→ Grow as a Full-Stack Software Developer' },
+  { type: 'output', content: '→ Build reliable and user-friendly applications' },
+  { type: 'output', content: '→ Learn from experienced engineers and keep improving' },
+
+  { type: 'blank', content: '' },
+
+  { type: 'prompt', content: 'ls skills/' },
+  { type: 'output', content: 'ASP.NET-Core/ Laravel/ React/ Next.js/ PostgreSQL/ Git/ Docker/' },
+];
+</file>
+
+<file path="docker-compose.yml">
+services:
+  portfolio:
+    image: ghcr.io/itsxianzhing/portfolio-tatan:latest
+    container_name: portfolio-tatan
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    networks:
+      - proxy-tier
+
+networks:
+  proxy-tier:
+    external: true
+</file>
+
+<file path="src/sections/ArsenalContactSection.jsx">
+import React, { useRef } from 'react'
+import { m as motion } from 'framer-motion'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Terminal, Send, Globe, Activity } from 'lucide-react'
+import AnimatedSection from '../components/AnimatedSection'
+import { SITE_META } from '../constants/data'
+
+gsap.registerPlugin(ScrollTrigger)
+
+// --- ORNAMEN KIRI ---
+const LeftDecor = () => (
+  <div
+    className="left-decor hidden lg:flex flex-col items-center justify-between w-12 shrink-0 opacity-30 select-none border-r border-[var(--border-subtle)]/30 py-4"
+    style={{ willChange: 'transform' }}
+  >
+    <div className="flex flex-col items-center gap-2">
+      <div className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse" />
+      <div className="w-px h-16 bg-gradient-to-b from-[var(--accent)]/50 to-transparent" />
+    </div>
+
+    <div
+      className="font-mono text-[9px] text-[var(--text-primary)] tracking-[0.3em] uppercase"
+      style={{
+        writingMode: 'vertical-rl',
+        transform: 'rotate(180deg)',
+      }}
+    >
+      Encrypting_Payload...
+    </div>
+
+    <div className="w-px h-24 bg-gradient-to-t from-[var(--border-subtle)] to-transparent" />
+  </div>
+)
+
+// --- ORNAMEN KANAN ---
+const RightDecor = () => (
+  <div
+    className="right-decor hidden lg:flex flex-col items-center justify-between w-12 shrink-0 opacity-30 select-none border-l border-[var(--border-subtle)]/30 py-4"
+    style={{ willChange: 'transform' }}
+  >
+    <div className="w-px h-24 bg-gradient-to-b from-[var(--border-subtle)] to-transparent" />
+
+    <div
+      className="font-mono text-[9px] text-[var(--text-primary)] tracking-[0.3em] uppercase"
+      style={{ writingMode: 'vertical-rl' }}
+    >
+      PORT: 443 [OPEN]
+    </div>
+
+    <div className="grid grid-cols-2 gap-1 mb-2">
+      <div className="w-1.5 h-1.5 bg-[var(--text-muted)]" />
+      <div className="w-1.5 h-1.5 bg-[var(--accent)]" />
+      <div className="w-1.5 h-1.5 bg-transparent border border-[var(--text-muted)]" />
+      <div className="w-1.5 h-1.5 bg-[var(--text-muted)]" />
+    </div>
+  </div>
+)
+
+export default function ArsenalContactSection() {
+  const containerRef = useRef(null)
+
+  useGSAP(() => {
+    const mm = gsap.matchMedia()
+
+    mm.add('(min-width: 1024px)', () => {
+      gsap.to('.left-decor', {
+        y: 100,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: 1.5,
+        },
+      })
+
+      gsap.to('.right-decor', {
+        y: 200,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: 1.5,
+        },
+      })
+    })
+  }, { scope: containerRef })
+
+  // --- Network Nodes dari SITE_META ---
+  const networks = [
+    {
+      name: 'GitHub',
+      url: SITE_META.github,
+    },
+    {
+      name: 'LinkedIn',
+      url: SITE_META.linkedin,
+    },
+    {
+      name: 'Instagram',
+      url: SITE_META.instagram,
+    },
+    {
+      name: 'X',
+      url: SITE_META.x,
+    },
+  ]
+
+  return (
+    <AnimatedSection
+      id="contact"
+      variant="rubberBand"
+      className="w-full max-w-7xl mx-auto py-20 px-6 lg:px-20"
+    >
+      <div
+        ref={containerRef}
+        className="flex flex-col gap-12"
+      >
+        {/* Section Header */}
+        <div className="gsap-child flex items-center gap-4 max-w-5xl mx-auto w-full">
+          <h2 className="text-2xl md:text-3xl font-mono font-bold text-[var(--text-primary)]">
+            <span className="text-[var(--accent)]">&lt;</span>{' '}
+            03. /connection_established{' '}
+            <span className="text-[var(--accent)]">/&gt;</span>
+          </h2>
+
+          <div className="flex-1 h-px bg-gradient-to-r from-[var(--border-subtle)] to-transparent" />
+        </div>
+
+        {/* CONTAINER UTAMA */}
+        <div className="flex justify-center items-stretch gap-8 lg:gap-12 w-full">
+
+          <LeftDecor />
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full max-w-5xl">
+
+            {/* Left Column: Network & Status */}
+            <div className="flex flex-col gap-10">
+
+              {/* GSAP CHILD 1: Network Nodes */}
+              <div className="gsap-child">
+                <h3 className="text-xl font-bold text-[var(--text-primary)] mb-6 flex items-center gap-3">
+                  <Globe
+                    size={24}
+                    className="text-[var(--accent)]"
+                  />
+                  Network Nodes
+                </h3>
+
+                <div className="flex flex-wrap gap-3">
+                  {networks.map((net, i) => (
+                    <a
+                      key={i}
+                      href={net.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 text-sm font-mono text-[var(--text-primary)] bg-[var(--border-subtle)]/10 border border-[var(--border-subtle)] rounded-lg hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-300 shadow-sm hover:shadow-[0_0_10px_var(--accent)]"
+                    >
+                      {net.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              {/* GSAP CHILD 2: Active Directives */}
+              <div className="gsap-child">
+                <h3 className="text-xl font-bold text-[var(--text-primary)] mb-6 flex items-center gap-3">
+                  <Activity
+                    size={24}
+                    className="text-[var(--accent)]"
+                  />
+                  Active Directives
+                </h3>
+
+                <div className="flex flex-col gap-4 font-mono text-sm text-[var(--text-primary)]/80">
+
+                  <div className="flex items-start gap-3 border-l-2 border-[var(--accent)] pl-3">
+                    <span className="text-[var(--accent)] mt-0.5">
+                      &gt;&gt;
+                    </span>
+
+                    <p>
+                      Developing a Helpdesk Ticket Management System using
+                      React and ASP.NET Core Web API to strengthen my
+                      full-stack development skills.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3 border-l-2 border-[var(--accent)] pl-3">
+                    <span className="text-[var(--accent)] mt-0.5">
+                      &gt;&gt;
+                    </span>
+
+                    <p>
+                      Accelerating development workflows with AI-powered
+                      engineering tools (Cursor, Claude, Gemini).
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3 border-l-2 border-[var(--accent)] pl-3">
+                    <span className="text-[var(--accent)] mt-0.5">
+                      &gt;&gt;
+                    </span>
+
+                    <p>
+                      Building strong software engineering fundamentals
+                      while exploring product thinking and real-world
+                      problem solving.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column: Terminal Contact */}
+            <div className="gsap-child flex flex-col justify-center">
+              <div className="rounded-xl overflow-hidden border border-[var(--border-subtle)] bg-[var(--bg-card)]/90 backdrop-blur-md shadow-2xl relative">
+
+                <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-[var(--accent)]/5 to-transparent pointer-events-none" />
+
+                {/* Terminal Header */}
+                <div className="flex items-center px-4 py-3 border-b border-[var(--border-subtle)] bg-[var(--bg-secondary)]">
+
+                  <div className="flex space-x-2">
+                    <div className="w-3 h-3 rounded-full bg-red-500/80" />
+                    <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                    <div className="w-3 h-3 rounded-full bg-green-500/80" />
+                  </div>
+
+                  <div className="absolute left-1/2 -translate-x-1/2 text-xs font-mono text-[var(--text-muted)]">
+                    contact.sh
+                  </div>
+
+                </div>
+
+                {/* Terminal Content */}
+                <div className="p-6 sm:p-8 font-mono text-sm sm:text-base leading-relaxed relative z-10">
+
+                  <p className="text-[var(--text-primary)]/70 mb-6">
+                    <span className="text-emerald-700 dark:text-emerald-400">
+                      root@fathan
+                    </span>
+                    :
+                    <span className="text-blue-700 dark:text-blue-400">
+                      ~
+                    </span>
+                    $ ./contact.sh
+                  </p>
+
+                  <div className="text-[var(--text-primary)] mb-10 space-y-4">
+                    <p>
+                      Initiating secure channel...
+                    </p>
+
+                    <p>
+                      I'm currently looking for Junior Full-Stack Developer
+                      opportunities. Whether you'd like to discuss web
+                      development, software engineering, or potential
+                      collaborations, I'd love to hear from you.
+                    </p>
+                  </div>
+
+                  <a
+                    href={`mailto:${SITE_META.email}`}
+                    className="inline-flex items-center gap-3 px-6 py-3 font-mono text-[var(--bg-primary)] bg-[var(--accent)] hover:bg-[var(--accent)]/90 hover:shadow-[0_0_20px_var(--accent)] transition-all duration-300 rounded-md font-bold uppercase tracking-wider text-sm"
+                  >
+                    <Send size={18} />
+                    Send Transmission
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <RightDecor />
+
+        </div>
+      </div>
+    </AnimatedSection>
+  )
+}
+</file>
+
+<file path="README.md">
+# Portfolio - Fathan Mulyasa H. (tan)
+
+**🚀 Live Demo:** [portfolio-tatan.vercel.app](https://portfolio.tansys.my.id/)
+
+![Lighthouse Performance Score 99]
+<img width="1366" height="768" alt="Screenshot from 2026-05-06 10-47-26" src="https://github.com/user-attachments/assets/d2145ce9-3476-4433-b67a-1b589b5c1152" />
+
+## Overview
+A high-performance, interactive developer portfolio built with a focus on advanced scroll-driven animations and extreme rendering optimization. The architecture has been rigorously audited to achieve a near-perfect Lighthouse score without sacrificing complex visual interactions and the cyberpunk-inspired terminal aesthetic.
+
+*(Click the image below to visit the live site)*
+<a href="https://portfolio-tatan.vercel.app/" target="_blank">
+  <img width="1366" height="768" alt="Portfolio Hero Preview" src="https://github.com/user-attachments/assets/b8b82b76-ad42-42bf-8e51-397b28016f40" />
+</a>
+
+## Core Architecture
+* **Framework:** React + Vite
+* **Styling:** Tailwind CSS (Custom Variables for strict theme integrity)
+* **Animation Engine:** GSAP (GreenSock) + `@gsap/react` & ScrollTrigger
+* **Graphics:** Native HTML5 `<canvas>`
+
+## Engineering Highlights
+1. **Canvas-Driven Rendering:** Replaced 150+ heavy DOM nodes with a single `<canvas>` element for the `SpaceParticles` background system. This eliminates main-thread blocking, prevents layout thrashing, and maintains a stable 60fps during scroll.
+2. **Advanced GSAP Integrations:**
+   * **Velocity Scrubbing:** An infinite `TechMarquee` that dynamically accelerates based on the user's scroll velocity (`self.getVelocity()`).
+   * **Parallax Depth:** Asynchronous vertical scrolling on terminal HUD ornaments to create a 3D depth illusion.
+   * **Viewport Intersections:** Bento box laser scans and staggered text reveals tied directly to `ScrollTrigger` batching.
+3. **Aggressive Code Splitting:** Implementation of `React.lazy()` and `<Suspense>` to defer the loading of off-screen sections (Projects, Contact), drastically reducing the initial JavaScript payload.
+4. **Fluid Responsiveness:** Fully adaptable layout from mobile viewports up to ultra-wide desktop monitors, featuring dynamic scaling for grid systems and typography.
+
+## Tech Arsenal
+* **Core:** React, Next.js, TypeScript, Tailwind CSS, Node.js, Laravel
+* **Visuals:** GSAP, HTML5 Canvas
+* **Ecosystem:** Docker, Git
+
+## Local Deployment
+
+### Prerequisites
+Ensure Node.js (v18.x or higher) is installed on your local environment.
+
+### Installation & Execution
+```bash
+# Clone the repository
+git clone [https://github.com/FathanEmHa/portfolio-tatan.git](https://github.com/FathanEmHa/portfolio-tatan.git)
+
+# Navigate to the project directory
+cd portfolio-tatan
+
+# Install dependencies
+npm install
+
+# Initialize the development server
+npm run dev
+</file>
+
+<file path="src/data/portfolioData.js">
+export const PROJECTS = [
+  {
+    id: 'sipa',
+    title: 'SIPA (Sistem Informasi Peminjaman Alat)',
+    description:
+      'A comprehensive digital asset management and borrowing system built for institutional use. Features role-based access control, automated penalty calculations, and dynamic inventory tracking.',
+    techStack: ['Laravel', 'Livewire', 'Tailwind CSS', 'MySQL', 'JWT / OTP'],
+    githubUrl: 'https://github.com/itsxianzhing/peminjaman-beta',
+    liveUrl: 'https://loan.tansys.my.id',
+  },
+  {
+    id: 'neo-japan-portfolio',
+    title: 'Neo Japan Interactive Portfolio',
+    description:
+      'A high-performance, cyberpunk-inspired personal portfolio. Engineered with advanced GSAP scroll-driven animations, parallax HUDs, and a custom HTML5 canvas particle engine achieving a 99+ Lighthouse performance score.',
+    techStack: ['React', 'GSAP', 'Tailwind CSS', 'Framer Motion'],
+    githubUrl: 'https://github.com/itsxianzhing/portfolio-tatan',
+    liveUrl: 'https://portfolio.tansys.my.id',
+  },
+  // {
+  //   id: 'sports-booking-system',
+  //   title: 'Sports Venue Management System (SVMS)',
+  //   description:
+  //     '[STATUS: IN DEVELOPMENT] A modern SaaS platform for sports venue businesses to manage venues, court bookings, payments, customer operations, and business analytics through a scalable multi-tenant architecture.',
+  //   techStack: [
+  //     'Next.js',
+  //     'TypeScript',
+  //     'Node.js',
+  //     'PostgreSQL',
+  //     'Prisma',
+  //     'Docker',
+  //   ],
+  //   githubUrl: null,
+  //   liveUrl: null,
+  // },
+  {
+    id: 'reimburse-system',
+    title: 'Reimbursement System',
+    description:
+      'A minimalist and highly optimized reimbursement platform. The backend is powered by Laravel, delivering secure RESTful APIs with JWT and OTP authentication, seamlessly consumed by a pure Vanilla JavaScript frontend.',
+    techStack: ['Laravel', 'JWT / OTP', 'Vanilla JS', 'REST API'],
+    githubUrl: 'https://github.com/melinnp/reimburse_app',
+    liveUrl: 'https://reimburse-app.tansys.my.id',
+  },
+  // {
+  //   id: 'nodefarm-beta',
+  //   title: 'NodeFarm (Concept Phase)',
+  //   description:
+  //     '[STATUS: CONCEPT & WIREFRAME] An early-stage productivity platform currently focused on product research, wireframing, and feature validation. The project exists as a static prototype used to explore workflows, information architecture, and future AI-powered task management experiences before full-scale development begins.',
+  //   techStack: ['Next.js', 'PostgreSQL', 'Tailwind CSS v4', 'Vercel AI SDK (Planned)'],
+  //   githubUrl: 'https://github.com/itsxianzhing/nodefarm-beta',
+  //   liveUrl: 'http://nodefarm.tansys.my.id',
+  // }
+  {
+    id: 'helpdesk-system',
+    title: 'Helpdesk Ticket Management System',
+    description:
+      '[STATUS: IN DEVELOPMENT] A modern helpdesk application built to streamline issue reporting and ticket management. Users can create and track support tickets, while administrators manage requests through role-based access, comments, pagination, filtering, and secure REST APIs.',
+    techStack: [
+      'React',
+      'ASP.NET Core Web API',
+      'C#',
+      'Entity Framework Core',
+      'PostgreSQL',
+      'JWT',
+      'Git',
+      'Scalar',
+    ],
+    githubUrl: "https://github.com/itsxianzhing/helpdesk-app",
+    liveUrl: null,
+  },
+];
+</file>
+
+</files>
