@@ -64,6 +64,7 @@ export const PROJECTS = [
       'PostgreSQL',
       'Supabase',
       'JWT',
+      'WebSocket',
       'Git',
       'Scalar',
     ],
