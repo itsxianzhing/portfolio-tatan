@@ -86,6 +86,6 @@ export const PROJECTS = [
       'Docker Compose',
       'Nginx Proxy Manager',
     ],
-    githubUrl: null,
+    githubUrl: 'https://github.com/itsxianzhing/prospect-desk',
   },
 ];
