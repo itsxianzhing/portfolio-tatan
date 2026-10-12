@@ -65,6 +65,7 @@ export const PROJECTS = [
       'Supabase',
       'JWT',
       'WebSocket',
+      'Redis',
       'Git',
       'Scalar',
     ],
