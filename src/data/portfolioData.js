@@ -72,4 +72,20 @@ export const PROJECTS = [
     githubUrl: 'https://github.com/itsxianzhing/helpdesk-app',
     liveUrl: 'https://helpdesk.tansys.my.id',
   },
+  {
+    id: 'prospectdesk',
+    title: 'ProspectDesk — Business Prospecting CRM',
+    description:
+      'A self-hosted CRM for managing business prospects, niche categorization, business audits, outreach activities, follow-ups, and sales pipeline tracking. Built with a relational data model and containerized deployment using Docker Compose, with persistent MySQL storage and Nginx Proxy Manager integration.',
+    techStack: [
+      'Next.js',
+      'TypeScript',
+      'Prisma',
+      'MySQL',
+      'Docker',
+      'Docker Compose',
+      'Nginx Proxy Manager',
+    ],
+    githubUrl: null,
+  },
 ];
