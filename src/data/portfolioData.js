@@ -73,6 +73,27 @@ export const PROJECTS = [
     liveUrl: 'https://helpdesk.tansys.my.id',
   },
   {
+    id: 'ai-personal-os',
+    title: 'AI Personal OS — "Aya"',
+    description:
+      '[STATUS: ACTIVE DEVELOPMENT] A self-hosted, Telegram-based AI personal operating system that acts as a proactive productivity companion. It manages projects, tasks, and daily logs, runs automated morning, afternoon, and evening check-ins, and pulls GitHub commit activity into the daily plan. A configurable LLM persona ("Aya") keeps short-term conversation memory and context-aware replies, while deterministic bot commands stay separate from free-form AI chat.',
+    techStack: [
+      'ASP.NET Core Web API',
+      'C#',
+      'Entity Framework Core',
+      'PostgreSQL',
+      'n8n',
+      'Telegram Bot API',
+      'OpenRouter (LLM)',
+      'GitHub API',
+      'Docker',
+      'Cloudflare Tunnel',
+      'Scalar',
+    ],
+    githubUrl: 'https://github.com/itsxianzhing/aya-personal-os',
+    liveUrl: null,
+  },
+  {
     id: 'prospectdesk',
     title: 'ProspectDesk — Business Prospecting CRM',
     description:
