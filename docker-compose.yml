@@ -4,14 +4,14 @@ services:
     container_name: portfolio-tatan
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:80/"]
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:80/"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 15s
     networks:
-      - proxy-tier
+      - proxy-network
 
 networks:
-  proxy-tier:
+  proxy-network:
     external: true
