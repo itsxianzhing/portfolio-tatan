@@ -12,8 +12,18 @@ export const PROJECTS = [
     id: 'neo-japan-portfolio',
     title: 'Neo Japan Interactive Portfolio',
     description:
-      'A high-performance, cyberpunk-inspired personal portfolio. Engineered with advanced GSAP scroll-driven animations, parallax HUDs, and a custom HTML5 canvas particle engine achieving a 99+ Lighthouse performance score.',
-    techStack: ['React', 'GSAP', 'Tailwind CSS', 'Framer Motion'],
+      'A high-performance, cyberpunk-inspired personal portfolio. Engineered with advanced GSAP scroll-driven animations, parallax HUDs, and a custom HTML5 canvas particle engine. Features an automated CI/CD pipeline using GitHub Actions, Docker, and GitHub Container Registry (GHCR) to build, publish, and deploy production images to a self-hosted VPS via SSH.',
+    techStack: [
+      'React',
+      'GSAP',
+      'Tailwind CSS',
+      'Framer Motion',
+      'Docker',
+      'GitHub Actions',
+      'GHCR',
+      'Nginx',
+      'VPS'
+    ],
     githubUrl: 'https://github.com/itsxianzhing/portfolio-tatan',
     liveUrl: 'https://portfolio.tansys.my.id',
   },
